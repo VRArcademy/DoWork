@@ -42,21 +42,16 @@ public class PlayerControlScripts : MonoBehaviour {
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 
-		/*Vector3 mPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-		rdbd.velocity = new Vector2 (0.1f*powerValue, 0.1f*powerValue);
-		rdbd.velocity = new Vector2 (0.05f*mPos.x*powerValue, 0.05f*mPos.y*powerValue);*/
-
-		/*Vector3 direction = aimPt.position - throwPoint.position;
-		direction.Normalize ();
-		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);*/
-
-		Vector3 mPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-		Vector3 direction = mPos - throwPoint.position;
+		Vector3 direction = aimPt.position - throwPoint.position;
 		direction.Normalize ();
 		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);
 	}
 
 	void PowerBarDisActive(){
 		PowerBar.gameObject.SetActive (false);
+	}
+
+	void MovingAim(){
+		
 	}
 }
