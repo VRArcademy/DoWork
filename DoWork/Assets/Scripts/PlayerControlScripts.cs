@@ -11,6 +11,7 @@ public class PlayerControlScripts : MonoBehaviour {
 	float PowerChange = 6.0f;
 	public GameObject Weapon;
 	public Transform throwPoint;
+	public Transform aimPt;
 
 
 	void Start () {
@@ -20,7 +21,7 @@ public class PlayerControlScripts : MonoBehaviour {
 		
 	void Update () {
 		
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetMouseButton(0)) {
 			PowerBar.gameObject.SetActive (true);
 			power += PowerChange;
 			if (power < 0 || power > 200) {
@@ -28,11 +29,11 @@ public class PlayerControlScripts : MonoBehaviour {
 			}
 			PowerBar.value = power / Maxpower;
 
-		} else if (Input.GetKeyUp (KeyCode.Space)) {
+		} else if (Input.GetMouseButtonUp(0)) {
 			Throw (power);
-			print (power);
+			//print (power);
 			power = 0;
-			Invoke ("PowerBarDisActive", 2);
+			Invoke ("PowerBarDisActive", 1f);
 		} 
 	}
 
@@ -41,10 +42,16 @@ public class PlayerControlScripts : MonoBehaviour {
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 
-		rdbd.velocity = new Vector2 (0.1f*powerValue, 0.1f*powerValue);
+		Vector3 direction = aimPt.position - throwPoint.position;
+		direction.Normalize ();
+		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);
 	}
 
 	void PowerBarDisActive(){
 		PowerBar.gameObject.SetActive (false);
+	}
+
+	void MovingAim(){
+		
 	}
 }
