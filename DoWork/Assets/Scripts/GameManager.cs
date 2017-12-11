@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
 	
 
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetMouseButtonDown (0)) {
 			RandomSpawnWeapon ();
 		}
 		
