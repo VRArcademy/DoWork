@@ -14,8 +14,10 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Transform throwPoint;
 	public Transform aimPt;
 
-	//Network variables
+
 	public uint playerID;
+
+	public int randomNum;
 
 	public override void OnStartLocalPlayer(){
 
@@ -54,6 +56,10 @@ public class PlayerControlScripts : NetworkBehaviour {
 					PowerChange = -PowerChange;
 				}
 				PowerBar.value = power / Maxpower;
+
+				CmdRandWeaponNum ();
+
+
 			} else if (Input.GetMouseButtonUp (0)) {
 				CmdThrow (power);
 				power = 0;
@@ -64,7 +70,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	[Command]
 	void CmdThrow(float powerValue){
-		Weapon = GameManager.instance.randWeapon;
+		
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 		NetworkServer.Spawn (obj);
@@ -83,5 +89,11 @@ public class PlayerControlScripts : NetworkBehaviour {
 		if(!GameManager.instance.playersIDList.Contains (playerID)){
 			GameManager.instance.playersIDList.Add(playerID);	
 		}
+	}
+
+	[Command]
+	void CmdRandWeaponNum(){
+		randomNum = Random.Range (0, 3);
+		Weapon = GameManager.instance.weaponList[randomNum];
 	}
 }
