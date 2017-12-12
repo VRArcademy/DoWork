@@ -22,15 +22,11 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public override void OnStartLocalPlayer(){
 
 		if (isServer) {
-			//1P
-			//this.transform.position = new Vector3(0, -4f, 0);
 			this.transform.position = new Vector2 (-4.03f, 1.63f);
-			//CmdP1isready ();
 
 		} else {
-			//2P
+			
 			this.transform.position = new Vector2 (5.24f, -4.1f);
-			//CmdP2isready ();
 		}
 
 	}
