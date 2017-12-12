@@ -47,6 +47,8 @@ public class GameManager : NetworkBehaviour {
 			isAllPlayerReady = true;
 			currentPlayerId = 0;
 			currentPlayerId = playersIdList [curPlayerIndex];
+		} if (!isAllPlayerReady) {
+			return;
 		}
 		
 		if (Input.GetMouseButtonDown (0)) {

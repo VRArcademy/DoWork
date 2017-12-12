@@ -244,8 +244,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182362de776a74d47b87ff2fd1ea870d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprite: {fileID: 0}
   playerId: 0
+  speed: 0.1
+  facingRight: 0
+  playerHealth: 100
+  curPlayerHealth: 0
+  playerStamina: 15
+  curPlayerStamina: 0
 --- !u!114 &114336790848249296
 MonoBehaviour:
   m_ObjectHideFlags: 1
