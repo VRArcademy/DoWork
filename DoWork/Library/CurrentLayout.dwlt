@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 471}
   m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 109
+  controlID: 89
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 471}
   m_MaxSize: {x: 18006, y: 14021}
   vertical: 0
-  controlID: 64
+  controlID: 9
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 65
+  controlID: 10
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,9 +339,9 @@ MonoBehaviour:
     height: 467
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f6dd0000
-    m_LastClickedID: 56822
-    m_ExpandedIDs: 220dfeff2614feff0e17feffb617feff8018feff8418feff644dfeff3253feffda53feffa454feffa854feffae9dfeffaaa4feff52a5feff1ca6feff20a6feffa2c6feff34ccfeffdcccfeffa6cdfeffaacdfeff62d8fefffcdffeffa4e0feff6ee1feff72e1feff00edfeffa8edfeff72eefeff76eefeff1c13ffff7219ffff1a1affffe41affffe81affffea2cffff922dffff5c2effff602efffff43affff9c3bffff663cffff6a3cffffca4dffff724effff3c4fffff404fffffcc5fffff6e62ffff1a63ffffe463ffffe863ffffe479ffff8c7affff567bffff5a7bffffba86ffff6287ffff2c88ffff3088ffffb6aeffff98b3ffff42b4ffff0cb5ffff10b5ffff44cfffffeecfffffb8d0ffffbcd0ffffa6e3ffff50e4ffff1ae5ffff1ee5ffff80f0ffffd8fbfffff4ffffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: d8fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Lobby
+  - GameScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -434,33 +434,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Lobby
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Lobby
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Game_Project\DoWork\DoWork
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: de240000
-    m_LastClickedID: 9438
+    m_SelectedIDs: 80250000
+    m_LastClickedID: 9600
     m_ExpandedIDs: 00000000de240000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scripts
-      m_OriginalName: Scripts
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9636
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 
