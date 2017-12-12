@@ -17,7 +17,7 @@ public class PlayerManager : NetworkBehaviour {
 	[SyncVar]public float curPlayerHealth = 0;
 	public float playerStamina = 15.0f;
 	[SyncVar]public float curPlayerStamina = 0;
-	[SyncVar]public bool refuelStamina;
+	[SyncVar]public bool StaminaEmpty;
 
 	public override void OnStartLocalPlayer(){
 		base.OnStartLocalPlayer ();
@@ -29,8 +29,9 @@ public class PlayerManager : NetworkBehaviour {
 	}
 
 	void Awake(){
+		curPlayerStamina = playerStamina;
 		facingRight = true;
-		refuelStamina = false;
+		StaminaEmpty = false;
 	}
 
 	void Start () {
@@ -43,24 +44,23 @@ public class PlayerManager : NetworkBehaviour {
 			if (!GameManager.instance.playersIdList.Contains (playerId)) {
 				CmdAddPlayer ();
 			}
-			StaminaRefuel ();
-			if (GameManager.instance.currentPlayerId == playerId && curPlayerStamina >= 0) {
-				PlayerMove ();
-			}if (curPlayerStamina <= 0) {
-				NextTurn ();
-				refuelStamina = false;
-			}
+			PlayerMove ();
 		}
 	}
 		
 	//Movement && flip over when move
 	void PlayerMove(){
-		CmdServerPlayerMove ();
+		if (GameManager.instance.currentPlayerId == playerId && StaminaEmpty == false) {
+			CmdServerPlayerMove ();
+		}if (GameManager.instance.currentPlayerId == playerId && StaminaEmpty == true) {
+			NextTurn ();
+		}
 	}
 		
 	[Command]
 	void CmdServerPlayerMove(){
 		MovementControl ();
+		StaminaControl ();
 		RpcClientPlayerMove ();
 	}
 
@@ -68,6 +68,7 @@ public class PlayerManager : NetworkBehaviour {
 	void RpcClientPlayerMove(){
 		MovementControl ();
 	}
+		
 		
 	void MovementControl(){
 		float horizonSpeed = Input.GetAxis ("Horizontal") * speed;
@@ -80,10 +81,11 @@ public class PlayerManager : NetworkBehaviour {
 		Flip (horizonSpeed);
 	}
 		
-	void StaminaRefuel(){
-		if (refuelStamina == false) {
-			curPlayerStamina = playerStamina;
-			refuelStamina = true;
+	void StaminaControl(){
+		if (curPlayerStamina >= 0) {
+			StaminaEmpty = false;
+		}if (curPlayerStamina <= 0) {
+			StaminaEmpty = true;
 		}
 	}
 
@@ -100,6 +102,14 @@ public class PlayerManager : NetworkBehaviour {
 			transform.localScale = theScale;
 		}
 	}
+
+	//Next Turn
+	void NextTurn(){
+		curPlayerStamina = playerStamina;
+		GameManager.instance.curPlayerIndex = (GameManager.instance.curPlayerIndex + 1) % 2;
+		GameManager.instance.currentPlayerId = GameManager.instance.playersIdList [GameManager.instance.curPlayerIndex];
+	}
+
 
 	/*[Command]
 	private void CmdServerFlip(float horizontal){
@@ -122,12 +132,6 @@ public class PlayerManager : NetworkBehaviour {
 	}*/
 
 	//Movement && flip over when move
-
-	//Next Turn
-	private void NextTurn(){
-		GameManager.instance.curPlayerIndex = (GameManager.instance.curPlayerIndex + 1) % 2;
-		GameManager.instance.currentPlayerId = GameManager.instance.playersIdList [GameManager.instance.curPlayerIndex];
-	}
 		
 	//PlayerId Assign
 	[Command]

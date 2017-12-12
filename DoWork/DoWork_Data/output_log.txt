@@ -15,14 +15,14 @@ Platform assembly: D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\UnityEngine
 Loading D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.020 seconds
+- Completed reload, in  0.035 seconds
 Platform assembly: D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Game_Project\DoWork\DoWork\DoWork_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 144Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.039718 ms
+UnloadTime: 1.082385 ms
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 481)
@@ -32,11 +32,2896 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 481)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.237332 ms
+UnloadTime: 1.258826 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1043.
-Total: 1.049342 ms (FindLiveObjects: 0.044270 ms CreateObjectMapping: 0.023418 ms MarkObjects: 0.971388 ms  DeleteObjects: 0.009944 ms)
+Total: 0.912039 ms (FindLiveObjects: 0.043949 ms CreateObjectMapping: 0.022776 ms MarkObjects: 0.837934 ms  DeleteObjects: 0.007057 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {29747}, last rec time {27646} rtt {11} timeout {2000}
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.UInt32].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at PlayerManager.NextTurn () [0x00000] in <filename unknown>:0 
+  at PlayerManager.PlayerMove () [0x00000] in <filename unknown>:0 
+  at PlayerManager.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Attempt to send to not connected connection {1}
+ 
+(Filename:  Line: 362)
+
+Failed to send internal buffer channel:0 bytesToSend:10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Send Error: WrongConnection channel:0 bytesToSend:10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ClientDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.395227 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1040.
+Total: 0.762545 ms (FindLiveObjects: 0.036250 ms CreateObjectMapping: 0.024380 ms MarkObjects: 0.689723 ms  DeleteObjects: 0.011548 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2944 -> priority: 1 
-  Thread -> id: 2c9c -> priority: 1 
+  Thread -> id: 3984 -> priority: 1 
+  Thread -> id: 183c -> priority: 1 
