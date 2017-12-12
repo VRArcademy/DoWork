@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61084983945755382}
   - component: {fileID: 114445553643803302}
   - component: {fileID: 114622217942617472}
-  - component: {fileID: 114218532758444528}
+  - component: {fileID: 114048942798259156}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114218532758444528
+--- !u!114 &114048942798259156
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -249,8 +249,9 @@ MonoBehaviour:
   facingRight: 0
   playerHealth: 100
   curPlayerHealth: 0
-  playerStamina: 15
+  playerStamina: 5
   curPlayerStamina: 0
+  refuelStamina: 0
 --- !u!114 &114336790848249296
 MonoBehaviour:
   m_ObjectHideFlags: 1

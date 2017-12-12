@@ -17,9 +17,7 @@ public class PlayerManager : NetworkBehaviour {
 	[SyncVar]public float curPlayerHealth = 0;
 	public float playerStamina = 15.0f;
 	[SyncVar]public float curPlayerStamina = 0;
-	public bool refuelStamina = false;
-
-
+	[SyncVar]public bool refuelStamina;
 
 	public override void OnStartLocalPlayer(){
 		base.OnStartLocalPlayer ();
@@ -32,6 +30,7 @@ public class PlayerManager : NetworkBehaviour {
 
 	void Awake(){
 		facingRight = true;
+		refuelStamina = false;
 	}
 
 	void Start () {
@@ -40,53 +39,57 @@ public class PlayerManager : NetworkBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (!isServer) {
-		}
-
 		if (isLocalPlayer) {
 			if (!GameManager.instance.playersIdList.Contains (playerId)) {
 				CmdAddPlayer ();
 			}
-			CmdPlayeMove_Mangement ();
-		}
-	}
-
-
-	//Movement && flip over when move
-	[Command]
-	private void CmdPlayeMove_Mangement(){
-		float HorizontalMove = Input.GetAxis ("Horizontal");
-		if (GameManager.instance.currentPlayerId == playerId) {
-			if (refuelStamina == false) {
-				curPlayerStamina = playerStamina;
-				refuelStamina = true;
-			}
-			LimitStamina ();
-			if (curPlayerStamina >= 0) {
-				PlayerMovement (HorizontalMove);
-				//Flip (HorizontalMove);
-				CmdServerFlip (HorizontalMove);
-				RpcClientFlip (HorizontalMove);
-				//NextTurn ();
-			}
-			if (curPlayerStamina <= 0) {
+			StaminaRefuel ();
+			if (GameManager.instance.currentPlayerId == playerId && curPlayerStamina >= 0) {
+				PlayerMove ();
+			}if (curPlayerStamina <= 0) {
 				NextTurn ();
 				refuelStamina = false;
 			}
 		}
 	}
+		
+	//Movement && flip over when move
+	void PlayerMove(){
+		CmdServerPlayerMove ();
+	}
+		
+	[Command]
+	void CmdServerPlayerMove(){
+		MovementControl ();
+		RpcClientPlayerMove ();
+	}
+
+	[ClientRpc]
+	void RpcClientPlayerMove(){
+		MovementControl ();
+	}
+		
+	void MovementControl(){
+		float horizonSpeed = Input.GetAxis ("Horizontal") * speed;
+		transform.Translate (horizonSpeed, 0, 0);
+		if (Input.GetKey (KeyCode.A)) {
+			curPlayerStamina -= Time.deltaTime;
+		}if (Input.GetKey (KeyCode.D)) {
+			curPlayerStamina -= Time.deltaTime;
+		}
+		Flip (horizonSpeed);
+	}
+		
+	void StaminaRefuel(){
+		if (refuelStamina == false) {
+			curPlayerStamina = playerStamina;
+			refuelStamina = true;
+		}
+	}
 
 	private void PlayerMovement(float horizontal){
 		this.transform.Translate (horizontal * speed, 0, 0);
-	}
-		
-	private void LimitStamina(){
-		if (Input.GetKey(KeyCode.A)) {
-			curPlayerStamina -= Time.deltaTime;
-		}if (Input.GetKey(KeyCode.D)) {
-			curPlayerStamina -= Time.deltaTime;
-		}
-		Debug.Log (curPlayerStamina.ToString ());
+		Flip (horizontal);
 	}
 		
 	private void Flip(float horizontal){
@@ -98,7 +101,7 @@ public class PlayerManager : NetworkBehaviour {
 		}
 	}
 
-	[Command]
+	/*[Command]
 	private void CmdServerFlip(float horizontal){
 		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
 			facingRight = !facingRight;
@@ -116,23 +119,16 @@ public class PlayerManager : NetworkBehaviour {
 			theScale.x *= -1;
 			transform.localScale = theScale;
 		}
-	}
+	}*/
 
-	[Command]
-	private void CmdOnStartFlip(){
-		this.transform.localScale = new Vector2 (-1.0f, 1);
-	}
 	//Movement && flip over when move
 
 	//Next Turn
 	private void NextTurn(){
-		
-			GameManager.instance.curPlayerIndex = (GameManager.instance.curPlayerIndex + 1) % 2;
-			GameManager.instance.currentPlayerId = GameManager.instance.playersIdList [GameManager.instance.curPlayerIndex];
+		GameManager.instance.curPlayerIndex = (GameManager.instance.curPlayerIndex + 1) % 2;
+		GameManager.instance.currentPlayerId = GameManager.instance.playersIdList [GameManager.instance.curPlayerIndex];
 	}
-
-
-
+		
 	//PlayerId Assign
 	[Command]
 	void CmdAddPlayer(){
