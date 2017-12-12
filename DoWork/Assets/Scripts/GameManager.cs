@@ -7,7 +7,6 @@ public class GameManager : NetworkBehaviour {
 
 	public static GameManager instance;
 	public List<GameObject> weaponList;
-	//public GameObject randWeapon;
 	public int randNum;
 
 	public enum GameState{WaitToStart, GameStarted, GameEnd}
@@ -25,27 +24,11 @@ public class GameManager : NetworkBehaviour {
 	}
 
 	void Update () {
-		
 		if (!isAllPlayerReady && playersIDList.Count == 2) {
 			isAllPlayerReady = true;
 			curTurnPlayerIndex = 0;
 			curTurnPlayerID = playersIDList [curTurnPlayerIndex];
 		}
 	}
-
-
-	/*[Command]
-	void CmdRandomSpawnWeapon(){
-		print ("Random Num: " + randNum);
-		randWeapon = weaponList [randNum];
-
-		RpcRandomSpawnWeapon (randNum);
-	}
-
-	[ClientRpc]
-	void RpcRandomSpawnWeapon(int rand){
-		randWeapon = weaponList [rand];
-	}*/
-
 
 }

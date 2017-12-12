@@ -14,21 +14,15 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Transform throwPoint;
 	public Transform aimPt;
 
-
 	public uint playerID;
 
 	public int randomNum;
 
+	public const int maxHealth = 100;
+	[SyncVar]public int Health;
+
 	public override void OnStartLocalPlayer(){
-
-		if (isServer) {
-			this.transform.position = new Vector2 (-4.03f, 1.63f);
-
-		} else {
-			
-			this.transform.position = new Vector2 (5.24f, -4.1f);
-		}
-
+		
 	}
 
 	void Start () {
@@ -36,10 +30,12 @@ public class PlayerControlScripts : NetworkBehaviour {
 		PowerBarDisActive ();
 
 		playerID = GetComponent<NetworkIdentity> ().netId.Value;
+
+		Health = maxHealth;
 	}
 		
 	void Update () {
-		
+
 		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
 			CmdAddPlayer ();
 		}
@@ -61,14 +57,15 @@ public class PlayerControlScripts : NetworkBehaviour {
 			} 
 		}
 	}
-		
-
 	[Command]
 	void CmdThrow(float powerValue){
 		
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 		NetworkServer.Spawn (obj);
+
+		WeaponScripts ws = obj.GetComponent<WeaponScripts> ();
+		ws.markedID = playerID;
 
 		Vector3 direction = aimPt.position - throwPoint.position;
 		direction.Normalize ();
@@ -97,5 +94,13 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void CmdRandWeaponNum(){
 		randomNum = Random.Range (0, 3);
 		Weapon = GameManager.instance.weaponList[randomNum];
+	}
+
+
+	void OnTriggerEnter2D(Collider2D other){
+		WeaponScripts WS = other.GetComponent<WeaponScripts> ();
+		if (playerID != WS.markedID) {
+			Health -= WS.Attack;
+		}
 	}
 }
