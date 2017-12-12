@@ -48,7 +48,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 			CmdAddPlayer ();
 		}
 
-		if (isLocalPlayer) {
+		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
+			
 			if (Input.GetMouseButton (0)) {
 				PowerBar.gameObject.SetActive (true);
 				power += PowerChange;
@@ -56,10 +57,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 					PowerChange = -PowerChange;
 				}
 				PowerBar.value = power / Maxpower;
-
 				CmdRandWeaponNum ();
-
-
 			} else if (Input.GetMouseButtonUp (0)) {
 				CmdThrow (power);
 				power = 0;
@@ -67,6 +65,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 			} 
 		}
 	}
+		
 
 	[Command]
 	void CmdThrow(float powerValue){
@@ -78,10 +77,17 @@ public class PlayerControlScripts : NetworkBehaviour {
 		Vector3 direction = aimPt.position - throwPoint.position;
 		direction.Normalize ();
 		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);
+
+		NextTurn ();
 	}
 
 	void PowerBarDisActive(){
 		PowerBar.gameObject.SetActive (false);
+	}
+
+	public void NextTurn(){
+		GameManager.instance.curTurnPlayerIndex = (GameManager.instance.curTurnPlayerIndex + 1) % 2;
+		GameManager.instance.curTurnPlayerID = GameManager.instance.playersIDList [GameManager.instance.curTurnPlayerIndex];
 	}
 		
 	[Command]

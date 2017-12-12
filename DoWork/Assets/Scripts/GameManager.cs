@@ -15,6 +15,10 @@ public class GameManager : NetworkBehaviour {
 
 	public List<uint> playersIDList;
 
+	[SyncVar]public uint curTurnPlayerID = uint.MaxValue;
+	[SyncVar]public int curTurnPlayerIndex = int.MaxValue;
+	[SyncVar]bool isAllPlayerReady = false;
+
 	void Start () {
 		instance = this;
 		state = GameState.WaitToStart;
@@ -22,6 +26,11 @@ public class GameManager : NetworkBehaviour {
 
 	void Update () {
 		
+		if (!isAllPlayerReady && playersIDList.Count == 2) {
+			isAllPlayerReady = true;
+			curTurnPlayerIndex = 0;
+			curTurnPlayerID = playersIDList [curTurnPlayerIndex];
+		}
 	}
 
 

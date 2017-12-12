@@ -142,7 +142,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.84, y: 0.84}
-    newSize: {x: 18.1, y: 0.84}
+    newSize: {x: 18.5, y: 0.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -187,7 +187,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 18.1, y: 0.84}
+  m_Size: {x: 18.5, y: 0.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -199,7 +199,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1345392450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -4.530108, z: 0}
+  m_LocalPosition: {x: 0.1, y: -4.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -250,10 +250,11 @@ MonoBehaviour:
   - {fileID: 1149601348464232, guid: 7364486c592c868458ccc1588ed9b884, type: 2}
   - {fileID: 1832660993720706, guid: 18dfd0ff63186a44cb5aebd24113cd5f, type: 2}
   - {fileID: 1555356196324146, guid: 61aceca00cf65954c97f4c1b5aab5c2f, type: 2}
-  randWeapon: {fileID: 0}
   randNum: 0
   state: 0
   playersIDList: 
+  curTurnPlayerID: 4294967295
+  curTurnPlayerIndex: 2147483647
 --- !u!114 &1358807260
 MonoBehaviour:
   m_ObjectHideFlags: 0
