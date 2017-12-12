@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
-public class PlayerControlScripts : MonoBehaviour {
+public class PlayerControlScripts : NetworkBehaviour {
 
 	Slider PowerBar;
 	int Maxpower = 200;
@@ -13,34 +14,60 @@ public class PlayerControlScripts : MonoBehaviour {
 	public Transform throwPoint;
 	public Transform aimPt;
 
+	//Network variables
+	public uint playerID;
+
+	public override void OnStartLocalPlayer(){
+
+		if (isServer) {
+			//1P
+			//this.transform.position = new Vector3(0, -4f, 0);
+			this.transform.position = new Vector2 (-4.03f, 1.63f);
+			//CmdP1isready ();
+
+		} else {
+			//2P
+			this.transform.position = new Vector2 (5.24f, -4.1f);
+			//CmdP2isready ();
+		}
+
+	}
 
 	void Start () {
 		PowerBar = gameObject.GetComponentInChildren<Slider> ();
 		PowerBarDisActive ();
+
+		playerID = GetComponent<NetworkIdentity> ().netId.Value;
 	}
 		
 	void Update () {
 		
-		if (Input.GetMouseButton(0)) {
-			PowerBar.gameObject.SetActive (true);
-			power += PowerChange;
-			if (power < 0 || power > 200) {
-				PowerChange = -PowerChange;
-			}
-			PowerBar.value = power / Maxpower;
+		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
+			CmdAddPlayer ();
+		}
 
-		} else if (Input.GetMouseButtonUp(0)) {
-			Throw (power);
-			//print (power);
-			power = 0;
-			Invoke ("PowerBarDisActive", 1f);
-		} 
+		if (isLocalPlayer) {
+			if (Input.GetMouseButton (0)) {
+				PowerBar.gameObject.SetActive (true);
+				power += PowerChange;
+				if (power < 0 || power > 200) {
+					PowerChange = -PowerChange;
+				}
+				PowerBar.value = power / Maxpower;
+			} else if (Input.GetMouseButtonUp (0)) {
+				CmdThrow (power);
+				power = 0;
+				Invoke ("PowerBarDisActive", 1f);
+			} 
+		}
 	}
 
-	void Throw(float powerValue){
+	[Command]
+	void CmdThrow(float powerValue){
 		Weapon = GameManager.instance.randWeapon;
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
+		NetworkServer.Spawn (obj);
 
 		Vector3 direction = aimPt.position - throwPoint.position;
 		direction.Normalize ();
@@ -50,8 +77,11 @@ public class PlayerControlScripts : MonoBehaviour {
 	void PowerBarDisActive(){
 		PowerBar.gameObject.SetActive (false);
 	}
-
-	void MovingAim(){
 		
+	[Command]
+	void CmdAddPlayer(){
+		if(!GameManager.instance.playersIDList.Contains (playerID)){
+			GameManager.instance.playersIDList.Add(playerID);	
+		}
 	}
 }

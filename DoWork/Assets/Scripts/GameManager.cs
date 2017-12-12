@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
 	public enum GameState{WaitToStart, GameStarted, GameEnd}
 	public GameState state;
 
+	public List<uint> playersIDList;
+
 	void Start () {
 		instance = this;
 		state = GameState.WaitToStart;
@@ -29,5 +31,16 @@ public class GameManager : MonoBehaviour {
 		randNum = Random.Range (0, 3);
 		print ("Random Num: " + randNum);
 		randWeapon = weaponList [randNum];
+	}
+
+	void OnGUI(){
+		GUI.skin.label.fontSize = 15;
+
+		string tmp = null;
+		for (int i = 0; i < playersIDList.Count; i++) {
+			tmp += playersIDList [i] + ",";
+		}
+
+		GUI.Label (new Rect (10, 50, 250, 20), "PlayersID: " + tmp);
 	}
 }
