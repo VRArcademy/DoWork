@@ -47,12 +47,14 @@ public class PlayerManager : NetworkBehaviour {
 			if (!GameManager.instance.playersIdList.Contains (playerId)) {
 				CmdAddPlayer ();
 			}
-			playeMove_Mangement ();
+			CmdPlayeMove_Mangement ();
 		}
 	}
 
+
 	//Movement && flip over when move
-	private void playeMove_Mangement(){
+	[Command]
+	private void CmdPlayeMove_Mangement(){
 		float HorizontalMove = Input.GetAxis ("Horizontal");
 		if (GameManager.instance.currentPlayerId == playerId) {
 			if (refuelStamina == false) {
@@ -62,10 +64,14 @@ public class PlayerManager : NetworkBehaviour {
 			LimitStamina ();
 			if (curPlayerStamina >= 0) {
 				PlayerMovement (HorizontalMove);
-				Flip (HorizontalMove);
+				//Flip (HorizontalMove);
 				CmdServerFlip (HorizontalMove);
 				RpcClientFlip (HorizontalMove);
+				//NextTurn ();
+			}
+			if (curPlayerStamina <= 0) {
 				NextTurn ();
+				refuelStamina = false;
 			}
 		}
 	}
@@ -120,11 +126,9 @@ public class PlayerManager : NetworkBehaviour {
 
 	//Next Turn
 	private void NextTurn(){
-		if (curPlayerStamina <= 0) {
+		
 			GameManager.instance.curPlayerIndex = (GameManager.instance.curPlayerIndex + 1) % 2;
 			GameManager.instance.currentPlayerId = GameManager.instance.playersIdList [GameManager.instance.curPlayerIndex];
-			refuelStamina = false;
-		}
 	}
 
 
