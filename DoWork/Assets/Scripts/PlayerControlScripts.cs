@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class PlayerControlScripts : MonoBehaviour {
+public class PlayerControlScripts : NetworkBehaviour {
 
+
+	//Slider
 	Slider PowerBar;
 	int Maxpower = 200;
 	float power = 0f;
@@ -14,13 +17,22 @@ public class PlayerControlScripts : MonoBehaviour {
 	public Transform aimPt;
 
 
+	public override void OnStartLocalPlayer(){
+		if (isServer) {
+			this.transform.position = new Vector2 (-12.0f, -0.75f);
+		} else {
+			this.transform.position = new Vector2 (12.0f, -0.75f);
+			this.transform.rotation = Quaternion.Euler (0, 180.0f, 0);
+			GameManager.instance.isAllPlayerReady = true;
+		}
+	}
+
 	void Start () {
 		PowerBar = gameObject.GetComponentInChildren<Slider> ();
 		PowerBarDisActive ();
 	}
 		
 	void Update () {
-		
 		if (Input.GetMouseButton(0)) {
 			PowerBar.gameObject.SetActive (true);
 			power += PowerChange;

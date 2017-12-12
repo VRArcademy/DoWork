@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212040381547961120}
   - component: {fileID: 50235871796885218}
   - component: {fileID: 60300667264511738}
+  - component: {fileID: 114502285792805100}
+  - component: {fileID: 114498477939690528}
   m_Layer: 0
   m_Name: PickAxes
   m_TagString: Untagged
@@ -136,6 +138,59 @@ PolygonCollider2D:
       - {x: -0.36923078, y: -0.47692308}
       - {x: -0.2923077, y: -0.4}
       - {x: -0.23846154, y: -0.36153847}
+--- !u!114 &114498477939690528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 2
+  m_SendInterval: 0.06666667
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &114502285792805100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 24
+    i1: 223
+    i2: 208
+    i3: 255
+    i4: 99
+    i5: 24
+    i6: 106
+    i7: 68
+    i8: 203
+    i9: 90
+    i10: 235
+    i11: 210
+    i12: 65
+    i13: 19
+    i14: 205
+    i15: 95
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!212 &212040381547961120
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -177,4 +232,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
