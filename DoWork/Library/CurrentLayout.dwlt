@@ -70,7 +70,11 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 471}
   m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
+<<<<<<< HEAD
+  controlID: 89
+=======
   controlID: 64
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,9 +94,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+    width: 1920
+    height: 1007
+  m_MinSize: {x: 950, y: 521}
+=======
     width: 950
     height: 982
   m_MinSize: {x: 950, y: 300}
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -139,7 +149,11 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 471}
   m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
+<<<<<<< HEAD
+  controlID: 9
+=======
   controlID: 125
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -341,7 +355,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
+    m_ExpandedIDs: d8fbffff00000000
+=======
     m_ExpandedIDs: c66dfeff426efeff406ffeff446ffeff4c7bfeffd280feff4e81feff4c82feff5082feff7ca6feff38acfeffb4acfeffb6adfeffbeadfeff0e53ffff70a5ffffeceaffffa2f1ffff24f2ffff22f3ffff26f3ffffacf8fffff4ffffff00000000
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +378,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Lobby
+  - GameScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -435,19 +453,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
+    - Assets/Lobby
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Lobby
+=======
     - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Scripts
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
   m_LastFoldersGridSize: 16
   m_LastProjectPath: B:\_WorkStage\GitHub\DoWork\DoWork
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_SelectedIDs: 80250000
+    m_LastClickedID: 9600
+    m_ExpandedIDs: 00000000de240000ffffff7f
+=======
     m_SelectedIDs: 202c0000
     m_LastClickedID: 11296
     m_ExpandedIDs: 00000000fc2b000000ca9a3bffffff7f
+>>>>>>> 00fa5f5dc8e7cb63038e8f23d5b085030e28a5bb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
