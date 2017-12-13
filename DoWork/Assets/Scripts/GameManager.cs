@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine.Networking;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class GameManager : NetworkBehaviour {
+<<<<<<< HEAD
 	//Singleton
+=======
+
+>>>>>>> Sing
 	public static GameManager instance;
 	public GameObject Player;
 
 	//List of Weapon
 	public List<GameObject> weaponList;
-	public GameObject randWeapon;
-	int randNum;
+	public int randNum;
 
 	//List of Player Id
 	public List<uint> playersIdList;
@@ -25,6 +29,7 @@ public class GameManager : NetworkBehaviour {
 	public enum GameState{WaitToStart, GameStarted, GameEnd}
 	public GameState state;
 
+<<<<<<< HEAD
 	void Awake(){
 		//Singleton
 		if (instance == null) {
@@ -53,12 +58,28 @@ public class GameManager : NetworkBehaviour {
 		
 		if (Input.GetMouseButtonDown (0)) {
 			RandomSpawnWeapon ();
+=======
+	public List<uint> playersIDList;
+
+	[SyncVar]public uint curTurnPlayerID = uint.MaxValue;
+	[SyncVar]public int curTurnPlayerIndex = int.MaxValue;
+	[SyncVar]bool isAllPlayerReady = false;
+
+	void Start () {
+		instance = this;
+		state = GameState.WaitToStart;
+	}
+
+	void Update () {
+		if (!isAllPlayerReady && playersIDList.Count == 2) {
+			isAllPlayerReady = true;
+
+			curTurnPlayerIndex = 0;
+			curTurnPlayerID = playersIDList [curTurnPlayerIndex];
+
+			state = GameState.GameStarted;
+>>>>>>> Sing
 		}
 	}
 
-	void RandomSpawnWeapon(){
-		randNum = Random.Range (0, 3);
-		print ("Random Num: " + randNum);
-		randWeapon = weaponList [randNum];
-	}
 }

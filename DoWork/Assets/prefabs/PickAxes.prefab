@@ -21,12 +21,20 @@ GameObject:
   - component: {fileID: 4487350162400604}
   - component: {fileID: 212040381547961120}
   - component: {fileID: 50235871796885218}
+<<<<<<< HEAD
   - component: {fileID: 60300667264511738}
   - component: {fileID: 114502285792805100}
   - component: {fileID: 114498477939690528}
+=======
+  - component: {fileID: 60556024326825832}
+  - component: {fileID: 114065098200667000}
+  - component: {fileID: 114738283416220912}
+  - component: {fileID: 114490634371134538}
+  - component: {fileID: 58364700877228378}
+>>>>>>> Sing
   m_Layer: 0
   m_Name: PickAxes
-  m_TagString: Untagged
+  m_TagString: pickAxes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1832660993720706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97971827, y: 0.36351538, z: 0}
+  m_LocalPosition: {x: -1.223, y: 1.799, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +72,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &60300667264511738
+--- !u!58 &58364700877228378
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.27826086
+--- !u!60 &60556024326825832
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -80,7 +103,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9846154, y: 0.9846154}
+    oldSize: {x: 0.5565217, y: 0.5565217}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -88,6 +111,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
+<<<<<<< HEAD
     - - {x: -0.14615385, y: -0.26923078}
       - {x: -0.10769231, y: -0.21538462}
       - {x: 0.23076923, y: 0.12307692}
@@ -160,6 +184,59 @@ MonoBehaviour:
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
 --- !u!114 &114502285792805100
+=======
+    - - {x: -0.08260869, y: -0.1521739}
+      - {x: -0.060869563, y: -0.12173913}
+      - {x: 0.13043478, y: 0.069565214}
+      - {x: 0.13043478, y: 0.07826087}
+      - {x: 0.15652174, y: 0.060869563}
+      - {x: 0.19130434, y: 0.026086956}
+      - {x: 0.19999999, y: 0.026086956}
+      - {x: 0.19565217, y: -0.004347826}
+      - {x: 0.21304347, y: -0.013043478}
+      - {x: 0.21304347, y: -0.039130434}
+      - {x: 0.23043478, y: -0.060869563}
+      - {x: 0.2652174, y: -0.06521739}
+      - {x: 0.2695652, y: -0.052173913}
+      - {x: 0.2695652, y: 0.052173913}
+      - {x: 0.26086956, y: 0.060869563}
+      - {x: 0.2521739, y: 0.060869563}
+      - {x: 0.25652173, y: 0.10869565}
+      - {x: 0.23913042, y: 0.117391296}
+      - {x: 0.23913042, y: 0.14347826}
+      - {x: 0.22173911, y: 0.1521739}
+      - {x: 0.2173913, y: 0.19130434}
+      - {x: 0.19130434, y: 0.2173913}
+      - {x: 0.14782608, y: 0.22608694}
+      - {x: 0.13913043, y: 0.23478259}
+      - {x: 0.104347825, y: 0.2521739}
+      - {x: 0.060869563, y: 0.26086956}
+      - {x: 0.052173913, y: 0.2695652}
+      - {x: -0.052173913, y: 0.2695652}
+      - {x: -0.060869563, y: 0.26086956}
+      - {x: -0.060869563, y: 0.24347825}
+      - {x: -0.034782607, y: 0.2173913}
+      - {x: 0.034782607, y: 0.1826087}
+      - {x: 0.043478258, y: 0.17391303}
+      - {x: 0.056521736, y: 0.1521739}
+      - {x: 0.07391304, y: 0.14347826}
+      - {x: 0.060869563, y: 0.12173913}
+      - {x: 0.008695652, y: 0.069565214}
+      - {x: -0.004347826, y: 0.06521739}
+      - {x: -0.056521736, y: 0.013043478}
+      - {x: -0.16521738, y: -0.104347825}
+      - {x: -0.1826087, y: -0.12173913}
+      - {x: -0.21304347, y: -0.14347826}
+      - {x: -0.2652174, y: -0.19565217}
+      - {x: -0.2695652, y: -0.20869565}
+      - {x: -0.2695652, y: -0.23478259}
+      - {x: -0.24782607, y: -0.25652173}
+      - {x: -0.22608694, y: -0.2695652}
+      - {x: -0.20869565, y: -0.2695652}
+      - {x: -0.16521738, y: -0.22608694}
+      - {x: -0.1347826, y: -0.20434782}
+--- !u!114 &114065098200667000
+>>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -191,6 +268,43 @@ MonoBehaviour:
     i15: 95
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &114490634371134538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2652c71fdece44c4084299f940e26332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  markedID: 0
+  Attack: 0
+--- !u!114 &114738283416220912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 2
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 3
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+>>>>>>> Sing
 --- !u!212 &212040381547961120
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_scene/Lobby.unity
+=======
+- path: Assets/_scene/LobbyScene.unity
+>>>>>>> Sing
   isLoaded: 1
   isActive: 1
