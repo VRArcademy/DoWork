@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Sprites;
 using UnityEngine.Networking;
 
 public class PlayerControlScripts : NetworkBehaviour {
 
 	public Slider PowerBar;
-
-	SpriteRenderer playerSprite;
 
 	int Maxpower = 200;
 	float power = 0f;
@@ -58,10 +55,10 @@ public class PlayerControlScripts : NetworkBehaviour {
 	}
 
 	void Awake(){
-		playerSprite = GetComponent<SpriteRenderer> ();
 		curPlayerStamina = playerStamina;
 		facingRight = true;
 		GroundCheck = transform.Find ("CheckGround");
+
 	}
 
 	void Start () {
@@ -158,19 +155,11 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	[ClientRpc]
 	void RpcFlip(float horizontal){
-		/*if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
+		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
 			facingRight = !facingRight;
-			Vector2 theScale = this.transform.localScale;
+			Vector3 theScale = transform.localScale;
 			theScale.x *= -1;
 			transform.localScale = theScale;
-		}*/
-
-		if (horizontal > 0) {
-			facingRight = true;
-			playerSprite.flipX = false;
-		} else if (horizontal < 0) {
-			facingRight = false;
-			playerSprite.flipX = true;
 		}
 	}
 
