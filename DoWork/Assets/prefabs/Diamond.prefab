@@ -21,11 +21,16 @@ GameObject:
   - component: {fileID: 4303980982313938}
   - component: {fileID: 212784480050560944}
   - component: {fileID: 50678638660325916}
+<<<<<<< HEAD
+  - component: {fileID: 114093629779563730}
+  - component: {fileID: 114275514106172078}
+=======
   - component: {fileID: 58517877321138950}
   - component: {fileID: 114616268883323270}
   - component: {fileID: 114270910756840588}
   - component: {fileID: 114745563120742810}
   - component: {fileID: 58129947711841828}
+>>>>>>> Sing
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Diamond
@@ -95,6 +100,10 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Radius: 0.375
+--- !u!114 &114093629779563730
+=======
   m_Radius: 0.25
 --- !u!114 &114270910756840588
 MonoBehaviour:
@@ -110,6 +119,7 @@ MonoBehaviour:
   markedID: 0
   Attack: 0
 --- !u!114 &114616268883323270
+>>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -141,7 +151,11 @@ MonoBehaviour:
     i15: 132
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+<<<<<<< HEAD
+--- !u!114 &114275514106172078
+=======
 --- !u!114 &114745563120742810
+>>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -153,8 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 2
+<<<<<<< HEAD
+  m_SendInterval: 0.06666667
+  m_SyncRotationAxis: 7
+=======
   m_SendInterval: 0.1
   m_SyncRotationAxis: 3
+>>>>>>> Sing
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
   m_MovementTheshold: 0.001
@@ -203,4 +222,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

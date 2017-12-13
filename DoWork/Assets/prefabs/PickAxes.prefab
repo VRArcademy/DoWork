@@ -21,11 +21,17 @@ GameObject:
   - component: {fileID: 4487350162400604}
   - component: {fileID: 212040381547961120}
   - component: {fileID: 50235871796885218}
+<<<<<<< HEAD
+  - component: {fileID: 60300667264511738}
+  - component: {fileID: 114502285792805100}
+  - component: {fileID: 114498477939690528}
+=======
   - component: {fileID: 60556024326825832}
   - component: {fileID: 114065098200667000}
   - component: {fileID: 114738283416220912}
   - component: {fileID: 114490634371134538}
   - component: {fileID: 58364700877228378}
+>>>>>>> Sing
   m_Layer: 0
   m_Name: PickAxes
   m_TagString: pickAxes
@@ -105,6 +111,80 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
+<<<<<<< HEAD
+    - - {x: -0.14615385, y: -0.26923078}
+      - {x: -0.10769231, y: -0.21538462}
+      - {x: 0.23076923, y: 0.12307692}
+      - {x: 0.23076923, y: 0.13846155}
+      - {x: 0.2769231, y: 0.10769231}
+      - {x: 0.33846155, y: 0.046153847}
+      - {x: 0.35384616, y: 0.046153847}
+      - {x: 0.34615386, y: -0.0076923077}
+      - {x: 0.37692308, y: -0.023076924}
+      - {x: 0.37692308, y: -0.06923077}
+      - {x: 0.4076923, y: -0.10769231}
+      - {x: 0.46923077, y: -0.115384616}
+      - {x: 0.47692308, y: -0.092307694}
+      - {x: 0.47692308, y: 0.092307694}
+      - {x: 0.46153846, y: 0.10769231}
+      - {x: 0.44615385, y: 0.10769231}
+      - {x: 0.45384616, y: 0.1923077}
+      - {x: 0.42307693, y: 0.20769231}
+      - {x: 0.42307693, y: 0.25384617}
+      - {x: 0.3923077, y: 0.26923078}
+      - {x: 0.3846154, y: 0.33846155}
+      - {x: 0.33846155, y: 0.3846154}
+      - {x: 0.26153848, y: 0.4}
+      - {x: 0.24615385, y: 0.41538462}
+      - {x: 0.18461539, y: 0.44615385}
+      - {x: 0.10769231, y: 0.46153846}
+      - {x: 0.092307694, y: 0.47692308}
+      - {x: -0.092307694, y: 0.47692308}
+      - {x: -0.10769231, y: 0.46153846}
+      - {x: -0.10769231, y: 0.43076923}
+      - {x: -0.06153846, y: 0.3846154}
+      - {x: 0.06153846, y: 0.32307693}
+      - {x: 0.07692308, y: 0.30769232}
+      - {x: 0.1, y: 0.26923078}
+      - {x: 0.13076924, y: 0.25384617}
+      - {x: 0.10769231, y: 0.21538462}
+      - {x: 0.015384615, y: 0.12307692}
+      - {x: -0.0076923077, y: 0.115384616}
+      - {x: -0.1, y: 0.023076924}
+      - {x: -0.2923077, y: -0.18461539}
+      - {x: -0.32307693, y: -0.21538462}
+      - {x: -0.37692308, y: -0.25384617}
+      - {x: -0.46923077, y: -0.34615386}
+      - {x: -0.47692308, y: -0.36923078}
+      - {x: -0.47692308, y: -0.41538462}
+      - {x: -0.43846154, y: -0.45384616}
+      - {x: -0.4, y: -0.47692308}
+      - {x: -0.36923078, y: -0.47692308}
+      - {x: -0.2923077, y: -0.4}
+      - {x: -0.23846154, y: -0.36153847}
+--- !u!114 &114498477939690528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832660993720706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 2
+  m_SendInterval: 0.06666667
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &114502285792805100
+=======
     - - {x: -0.08260869, y: -0.1521739}
       - {x: -0.060869563, y: -0.12173913}
       - {x: 0.13043478, y: 0.069565214}
@@ -156,6 +236,7 @@ PolygonCollider2D:
       - {x: -0.16521738, y: -0.22608694}
       - {x: -0.1347826, y: -0.20434782}
 --- !u!114 &114065098200667000
+>>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -187,6 +268,8 @@ MonoBehaviour:
     i15: 95
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+<<<<<<< HEAD
+=======
 --- !u!114 &114490634371134538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,6 +304,7 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+>>>>>>> Sing
 --- !u!212 &212040381547961120
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -262,4 +346,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
