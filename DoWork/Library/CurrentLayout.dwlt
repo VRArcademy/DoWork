@@ -25,6 +25,9 @@ MonoBehaviour:
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 545}
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
@@ -135,6 +138,9 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 14045}
   vertical: 0
   controlID: 5138
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &6
 MonoBehaviour:
@@ -170,6 +176,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
   controlID: 5233
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &7
 MonoBehaviour:
@@ -250,6 +259,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 1250
@@ -267,6 +277,15 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 495}
   m_MaxSize: {x: 10004, y: 14045}
   vertical: 1
+=======
+    x: 983
+    y: 0
+    width: 429
+    height: 957
+  m_MinSize: {x: 234, y: 495}
+  m_MaxSize: {x: 10004, y: 14045}
+  vertical: 1
+>>>>>>> parent of 6d67e41... Flip Ok
   controlID: 5139
 --- !u!114 &10
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -286,12 +305,15 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 340
     height: 421
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 14}
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     width: 429
     height: 488
   m_MinSize: {x: 202, y: 224}
@@ -352,6 +374,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 1250
@@ -359,12 +382,17 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 1412
     y: 0
     width: 508
     height: 957
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
   m_ActualView: {fileID: 18}
   m_Panes:
@@ -582,6 +610,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1252
     y: 122
     width: 336
@@ -598,6 +627,10 @@ MonoBehaviour:
 =======
     x: 985
     y: 122
+=======
+    x: 985
+    y: 122
+>>>>>>> parent of 6d67e41... Flip Ok
     width: 425
     height: 467
   m_TreeViewState:
@@ -609,6 +642,9 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: 
       m_OriginalName: 
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
       m_EditFieldRect:
         serializedVersion: 2
@@ -617,7 +653,11 @@ MonoBehaviour:
         width: 0
         height: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_UserData: -31222
+=======
+      m_UserData: 0
+>>>>>>> parent of 6d67e41... Flip Ok
 =======
       m_UserData: 0
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -688,11 +728,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1252
     y: 543
     width: 336
     height: 515
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 985
     y: 610
     width: 425
@@ -710,11 +753,19 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Lobby/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Lobby/Prefabs
+=======
+    - Assets/Image
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Image
+>>>>>>> parent of 6d67e41... Flip Ok
 =======
     - Assets/Image
   m_ViewMode: 1
@@ -728,10 +779,13 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 5a2f0000
     m_LastClickedID: 12122
     m_ExpandedIDs: 000000008c240000f2250000f4250000ffffff7f
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     m_SelectedIDs: 30260000
     m_LastClickedID: 9776
     m_ExpandedIDs: 00000000e0240000ffffff7f
@@ -791,9 +845,12 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 2215feff082b0000ca260000102b0000ea250000
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -922,6 +979,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 122
     width: 1248
@@ -975,6 +1033,8 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 1414
     y: 122
     width: 506
