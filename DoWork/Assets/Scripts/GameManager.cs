@@ -19,8 +19,8 @@ public class GameManager : NetworkBehaviour {
 
 	//List of Player Id
 	public List<uint> playersIdList;
-	public int curPlayerIndex = 0;
-	[SyncVar]public uint currentPlayerId = 0;
+	[SyncVar]public int curPlayerIndex = 0; //no need sync
+	[SyncVar]public uint currentPlayerId =  uint.MaxValue;
 
 	//List of Boolean
 	[SyncVar]public bool isAllPlayerReady = false;
@@ -39,8 +39,8 @@ public class GameManager : NetworkBehaviour {
 		}
 
 		//Players Network Id Declare
-		playersIdList = new List<uint>();
-		currentPlayerId = uint.MaxValue;
+		//playersIdList = new List<uint>();
+		//currentPlayerId = uint.MaxValue;
 		DontDestroyOnLoad (this.gameObject);
 	}
 
@@ -55,6 +55,7 @@ public class GameManager : NetworkBehaviour {
 		} if (!isAllPlayerReady) {
 			return;
 		}
+<<<<<<< HEAD
 		
 		if (Input.GetMouseButtonDown (0)) {
 			RandomSpawnWeapon ();
@@ -80,6 +81,8 @@ public class GameManager : NetworkBehaviour {
 			state = GameState.GameStarted;
 >>>>>>> Sing
 		}
+=======
+>>>>>>> 9bbe67c9b58dd1af3b1ae7695962f8e1f0ebf22b
 	}
 
 }
