@@ -11,9 +11,13 @@ public class PlayerControlScripts : NetworkBehaviour {
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
+
 	public GameObject Weapon;
 	public Transform throwPoint;
+
 	public Transform aimPt;
+	[SyncVar]Vector3 aimPos;
+
 	Vector3 playerPos;
 
 	//Collision Handle
@@ -21,14 +25,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 	Transform GroundCheck;
 	const float groundedRadius = .2f;
 	public bool grounded;
-
-
-	float Radius = 2.0f;
-	public uint playerID;
-	public int randomNum;
-	public const int maxHealth = 100;
-	[SyncVar(hook = "OnHealthChange")]public int Health;
-	public Slider HealthBar;
 
 	//PlayerMovement
 	public float speed = 0.1f; 
@@ -40,16 +36,22 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public float playerStamina = 15.0f;
 	[SyncVar]public float curPlayerStamina = 0;
 
+	float Radius = 2.0f;
+
+	public uint playerID;
+
+	public int randomNum;
+
+	public const int maxHealth = 100;
+	[SyncVar(hook = "OnHealthChange")]public int Health;
+	public Slider HealthBar;
+
+	[SyncVar]public string pname = "PlayerName";
+	[SyncVar]public Color playerColor = Color.white;
+	public Text PnameTxt;
 
 	public override void OnStartLocalPlayer(){
 		base.OnStartLocalPlayer ();
-	}
-
-	void Start () {
-		PowerBarDisActive ();
-		aimPt.gameObject.SetActive (false);
-		playerID = GetComponent<NetworkIdentity> ().netId.Value;
-		Health = maxHealth;
 	}
 
 	void Awake(){
@@ -58,24 +60,30 @@ public class PlayerControlScripts : NetworkBehaviour {
 		GroundCheck = transform.Find ("CheckGround");
 
 	}
-		
+
+	void Start () {
+		PowerBarDisActive ();
+		aimPt.gameObject.SetActive (false);
+		playerID = GetComponent<NetworkIdentity> ().netId.Value;
+		Health = maxHealth;
+		PnameTxt.text = pname;
+		PnameTxt.color = playerColor;
+	}
 	void FixedUpdate () {
 		if (!isLocalPlayer) {
 			return;
 		}
 
 		playerPos = this.transform.position;
-		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
+		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID) ) {
 			CmdAddPlayer ();
 		}
-
-		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
+		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID && GameManager.instance.state != GameManager.GameState.GameEnd) {
+			aimPt.gameObject.SetActive (true);
 			PlayerManagement ();
 		}
+		Dead ();
 	}
-		
-
-
 	//Player Movement
 	void PlayerManagement(){
 		aimPt.gameObject.SetActive (true);
@@ -124,7 +132,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 				this.transform.position = pos;
 			}
 		}
-				
+
 	}
 
 	[Command]
@@ -136,9 +144,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 			curPlayerStamina -= Time.deltaTime;
 		}
 	}
-
-
-
+		
 	[Command]
 	private void CmdFlip(float horizontal){
 		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
@@ -207,6 +213,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 	}
 
+
 	[Command]
 	void CmdMovingAim(){
 		if (isLocalPlayer) {
@@ -264,4 +271,13 @@ public class PlayerControlScripts : NetworkBehaviour {
 			GameManager.instance.playersIDList.Add(playerID);	
 		}
 	}
+
+	void Dead(){
+		if (Health < 0) {
+			GameManager.instance.PlayerNum--;
+			Destroy (gameObject);
+		}
+	}
+
+
 }
