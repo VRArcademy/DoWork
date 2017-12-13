@@ -6,16 +6,11 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class PlayerControlScripts : NetworkBehaviour {
-<<<<<<< HEAD
 
 
 	//Slider
 	Slider PowerBar;
-=======
 
-	public Slider PowerBar;
-
->>>>>>> Sing
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
@@ -24,10 +19,17 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Transform aimPt;
 	Vector3 playerPos;
 
+	//PlayerMovement
+	public float speed = 0.1f; 
+	[SyncVar]public bool facingRight;
+
+	//Player Status
+	public float playerStamina = 15.0f;
+	[SyncVar]public float curPlayerStamina = 0;
+
+
 	float Radius = 2.0f;
-
 	public uint playerID;
-
 	public int randomNum;
 
 	public const int maxHealth = 100;
@@ -35,10 +37,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Slider HealthBar;
 
 	public override void OnStartLocalPlayer(){
-		
-	}
-
-	public override void OnStartLocalPlayer(){
+		base.OnStartLocalPlayer ();
 		if (isServer) {
 			this.transform.position = new Vector2 (-12.0f, -0.75f);
 		} else {
@@ -48,36 +47,25 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 	}
 
+	void Awake(){
+		curPlayerStamina = playerStamina;
+		facingRight = true;
+	}
+
 	void Start () {
-		
 		PowerBarDisActive ();
-
 		aimPt.gameObject.SetActive (false);
-
 		playerID = GetComponent<NetworkIdentity> ().netId.Value;
-
 		Health = maxHealth;
 	}
-		
-<<<<<<< HEAD
-	void Update () {
-		if (Input.GetMouseButton(0)) {
-			PowerBar.gameObject.SetActive (true);
-			power += PowerChange;
-			if (power < 0 || power > 200) {
-				PowerChange = -PowerChange;
-			}
-			PowerBar.value = power / Maxpower;
-=======
-	void FixedUpdate () {
->>>>>>> Sing
 
+	void FixedUpdate () {
 		playerPos = this.transform.position;
 
 		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
 			CmdAddPlayer ();
 		}
-		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
+		if (isLocalPlayer && playerID == GameManager.instance.currentPlayerId) {
 			
 			aimPt.gameObject.SetActive (true);
 			MovingAim ();
@@ -101,6 +89,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 				
 		}
 	}
+
 	[Command]
 	void CmdThrow(float powerValue){
 		
@@ -128,7 +117,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	public void NextTurn(){
 		GameManager.instance.curTurnPlayerIndex = (GameManager.instance.curTurnPlayerIndex + 1) % 2;
-		GameManager.instance.curTurnPlayerID = GameManager.instance.playersIDList [GameManager.instance.curTurnPlayerIndex];
+		GameManager.instance.currentPlayerId = GameManager.instance.playersIDList [GameManager.instance.curTurnPlayerIndex];
 	}
 		
 	[Command]
@@ -182,6 +171,62 @@ public class PlayerControlScripts : NetworkBehaviour {
 			}
 			aimPt.transform.position = aimPos;
 		}
+	}
+
+	//Movement && flip over when move
+	void PlayerMovement(){
+		float horizonSpeed = Input.GetAxis ("Horizontal") * speed;
+		this.transform.Translate(horizonSpeed, 0, 0);
+		CmdFlip (horizonSpeed);
+		//CmdStaminaLimit ();
+		if(isLocalPlayer){
+			if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D)) {
+				curPlayerStamina -= Time.deltaTime;
+			}
+		}
+		if (curPlayerStamina <= 0) {
+			NextTurn ();
+		}
+	}
+
+	/*[Command]
+	void CmdStaminaLimit(){
+		if (isLocalPlayer) {
+			if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D)) {
+				curPlayerStamina -= Time.deltaTime;
+			}
+		}
+		if (curPlayerStamina <= 0) {
+				NextTurn ();
+		}
+	}*/
+
+	[Command]
+	private void CmdFlip(float horizontal){
+		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
+			facingRight = !facingRight;
+			Vector3 theScale = transform.localScale;
+			theScale.x *= -1;
+			transform.localScale = theScale;
+		}
+		RpcFlip (horizontal);
+	}
+	[ClientRpc]
+	void RpcFlip(float horizontal){
+		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
+			facingRight = !facingRight;
+			Vector3 theScale = transform.localScale;
+			theScale.x *= -1;
+			transform.localScale = theScale;
+		}
+	}
+	//Movement && flip over when move
+
+	//Next Turn
+	void NextTurn(){
+		curPlayerStamina = playerStamina;
+		GameManager.instance.curTurnPlayerIndex = (GameManager.instance.curTurnPlayerIndex + 1) % 2;
+		GameManager.instance.currentPlayerId = GameManager.instance.curTurnPlayerIndex [GameManager.instance.curTurnPlayerIndex];
 	}
 
 	void OnHealthChange(int health){
