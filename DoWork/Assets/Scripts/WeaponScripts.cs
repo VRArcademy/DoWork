@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class WeaponScripts : MonoBehaviour {
+public class WeaponScripts : NetworkBehaviour {
 
-	public uint markedID;
+	[SyncVar]public uint markedID;
 	public int Attack = 0;
 
 	// Use this for initialization

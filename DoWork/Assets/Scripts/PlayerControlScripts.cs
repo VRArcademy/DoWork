@@ -13,6 +13,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public GameObject Weapon;
 	public Transform throwPoint;
 	public Transform aimPt;
+	Vector3 playerPos;
 
 	public uint playerID;
 
@@ -20,6 +21,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	public const int maxHealth = 100;
 	[SyncVar]public int Health;
+	public enum AttackState{Wait, Aiming, Attack}
+	public AttackState attackstate;
 
 	public override void OnStartLocalPlayer(){
 		
@@ -28,6 +31,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void Start () {
 		PowerBar = gameObject.GetComponentInChildren<Slider> ();
 		PowerBarDisActive ();
+
+		aimPt.gameObject.SetActive (false);
 
 		playerID = GetComponent<NetworkIdentity> ().netId.Value;
 
@@ -39,23 +44,35 @@ public class PlayerControlScripts : NetworkBehaviour {
 		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
 			CmdAddPlayer ();
 		}
-
 		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
-			
-			if (Input.GetMouseButton (0)) {
-				PowerBar.gameObject.SetActive (true);
-				power += PowerChange;
-				if (power < 0 || power > 200) {
-					PowerChange = -PowerChange;
+			if (attackstate == AttackState.Wait) {
+				attackstate = AttackState.Aiming;
+			}
+			if (attackstate == AttackState.Aiming) {
+				aimPt.gameObject.SetActive (true);
+				CmdMovingAim ();
+				if (Input.GetMouseButton (0)) {
+					attackstate = AttackState.Attack;
 				}
-				PowerBar.value = power / Maxpower;
-				CmdRandWeaponNum ();
-			} else if (Input.GetMouseButtonUp (0)) {
-				CmdThrow (power);
-				power = 0;
-				Invoke ("PowerBarDisActive", 1f);
-			} 
+			}
+			if (attackstate == AttackState.Attack) {
+				if (Input.GetMouseButton (0)) {
+					PowerBar.gameObject.SetActive (true);
+					power += PowerChange;
+					if (power < 0 || power > 200) {
+						PowerChange = -PowerChange;
+					}
+					PowerBar.value = power / Maxpower;
+					CmdRandWeaponNum ();
+				} else if (Input.GetMouseButtonUp (0)) {
+					CmdThrow (power);
+					power = 0;
+					Invoke ("PowerBarDisActive", 1f);
+				} 
+			}
 		}
+
+		playerPos = this.transform.position;
 	}
 	[Command]
 	void CmdThrow(float powerValue){
@@ -79,6 +96,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	}
 
 	public void NextTurn(){
+		attackstate = AttackState.Wait;
 		GameManager.instance.curTurnPlayerIndex = (GameManager.instance.curTurnPlayerIndex + 1) % 2;
 		GameManager.instance.curTurnPlayerID = GameManager.instance.playersIDList [GameManager.instance.curTurnPlayerIndex];
 	}
@@ -101,6 +119,25 @@ public class PlayerControlScripts : NetworkBehaviour {
 		WeaponScripts WS = other.GetComponent<WeaponScripts> ();
 		if (playerID != WS.markedID) {
 			Health -= WS.Attack;
+			Destroy (other.gameObject);
+		}
+	}
+
+	[Command]
+	void CmdMovingAim(){
+		if (isLocalPlayer) {
+			Vector3 temp = Input.mousePosition;
+			/*Vector3 aimPos = aimPt.transform.position;
+		      aimPos = Camera.main.ScreenToWorldPoint (temp);*/  //////Stupid mistake!!!!!!
+			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
+			//aimPt.transform.position = aimPos;
+
+			if (aimPos.x > playerPos.x + 2.7f) {
+				aimPos = new Vector2 (playerPos.x + 2.7f, aimPos.y);
+			} else if (aimPos.x < playerPos.x + 0.8f) {
+				aimPos = new Vector2 (playerPos.x + 0.8f, aimPos.y);
+			}
+			aimPt.transform.position = aimPos;
 		}
 	}
 }

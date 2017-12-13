@@ -26,8 +26,11 @@ public class GameManager : NetworkBehaviour {
 	void Update () {
 		if (!isAllPlayerReady && playersIDList.Count == 2) {
 			isAllPlayerReady = true;
+
 			curTurnPlayerIndex = 0;
 			curTurnPlayerID = playersIDList [curTurnPlayerIndex];
+
+			state = GameState.GameStarted;
 		}
 	}
 
