@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 212731142436341468}
   - component: {fileID: 50837015543366730}
   - component: {fileID: 60037565574778328}
-  - component: {fileID: 114198588218785726}
   - component: {fileID: 114081892089126920}
-  - component: {fileID: 114451851836584366}
   - component: {fileID: 58729898315337376}
   m_Layer: 0
   m_Name: Diamond_Axe
@@ -138,59 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   markedID: 0
   Attack: 0
---- !u!114 &114198588218785726
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1555356196324146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 97
-    i1: 172
-    i2: 236
-    i3: 160
-    i4: 12
-    i5: 246
-    i6: 89
-    i7: 84
-    i8: 201
-    i9: 127
-    i10: 76
-    i11: 27
-    i12: 90
-    i13: 171
-    i14: 92
-    i15: 47
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
---- !u!114 &114451851836584366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1555356196324146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 2
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!212 &212731142436341468
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -232,4 +177,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

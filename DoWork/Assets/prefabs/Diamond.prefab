@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 212784480050560944}
   - component: {fileID: 50678638660325916}
   - component: {fileID: 58517877321138950}
-  - component: {fileID: 114616268883323270}
   - component: {fileID: 114270910756840588}
-  - component: {fileID: 114745563120742810}
   - component: {fileID: 58129947711841828}
   m_Layer: 0
   m_Name: Diamond
@@ -109,59 +107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   markedID: 0
   Attack: 0
---- !u!114 &114616268883323270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149601348464232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 115
-    i1: 100
-    i2: 72
-    i3: 108
-    i4: 89
-    i5: 44
-    i6: 134
-    i7: 132
-    i8: 88
-    i9: 204
-    i10: 193
-    i11: 88
-    i12: 142
-    i13: 217
-    i14: 184
-    i15: 132
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
---- !u!114 &114745563120742810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149601348464232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 2
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!212 &212784480050560944
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -203,4 +148,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
