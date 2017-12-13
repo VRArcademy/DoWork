@@ -1,21 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class PlayerControlScripts : NetworkBehaviour {
-<<<<<<< HEAD
-
-
-	//Slider
-	Slider PowerBar;
-=======
 
 	public Slider PowerBar;
 
->>>>>>> Sing
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
@@ -38,16 +30,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 		
 	}
 
-	public override void OnStartLocalPlayer(){
-		if (isServer) {
-			this.transform.position = new Vector2 (-12.0f, -0.75f);
-		} else {
-			this.transform.position = new Vector2 (12.0f, -0.75f);
-			this.transform.rotation = Quaternion.Euler (0, 180.0f, 0);
-			GameManager.instance.isAllPlayerReady = true;
-		}
-	}
-
 	void Start () {
 		
 		PowerBarDisActive ();
@@ -59,18 +41,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		Health = maxHealth;
 	}
 		
-<<<<<<< HEAD
-	void Update () {
-		if (Input.GetMouseButton(0)) {
-			PowerBar.gameObject.SetActive (true);
-			power += PowerChange;
-			if (power < 0 || power > 200) {
-				PowerChange = -PowerChange;
-			}
-			PowerBar.value = power / Maxpower;
-=======
 	void FixedUpdate () {
->>>>>>> Sing
 
 		playerPos = this.transform.position;
 
