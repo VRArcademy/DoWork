@@ -1614,8 +1614,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1358807258}
-  - component: {fileID: 1358807259}
   - component: {fileID: 1358807260}
+  - component: {fileID: 1358807259}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1650,8 +1650,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   weaponList:
   - {fileID: 1149601348464232, guid: 7364486c592c868458ccc1588ed9b884, type: 2}
-  - {fileID: 1832660993720706, guid: 18dfd0ff63186a44cb5aebd24113cd5f, type: 2}
   - {fileID: 1555356196324146, guid: 61aceca00cf65954c97f4c1b5aab5c2f, type: 2}
+  - {fileID: 1832660993720706, guid: 18dfd0ff63186a44cb5aebd24113cd5f, type: 2}
   randWeapon: {fileID: 0}
   playersIdList: 
   curPlayerIndex: 0

@@ -54,7 +54,6 @@ public class GameManager : NetworkBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			RandomSpawnWeapon ();
 		}
-		
 	}
 
 	void RandomSpawnWeapon(){
