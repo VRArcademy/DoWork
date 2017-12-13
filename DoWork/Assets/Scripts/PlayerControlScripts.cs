@@ -105,8 +105,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void PlayerMovement(){
 		float horizonSpeed = Input.GetAxis ("Horizontal") * speed;
 		this.transform.Translate(horizonSpeed, 0, 0);
-		CmdFlip (horizonSpeed);
-		RpcFlip (horizonSpeed);
+		Flip (horizonSpeed);
 		CmdStaminaLimit ();
 	}
 
@@ -145,14 +144,13 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 	}
 		
+	void Flip(float horizontal){
+		CmdFlip (horizontal);
+	}
+
 	[Command]
-	private void CmdFlip(float horizontal){
-		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
-			facingRight = !facingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
-		}
+	void CmdFlip(float horizontal){
+		RpcFlip (horizontal);
 	}
 
 	[ClientRpc]
@@ -189,14 +187,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 		Weapon = GameManager.instance.weaponList[randomNum];
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
-		WeaponScripts WS = other.GetComponent<WeaponScripts> ();
-		if (playerID != WS.markedID) {
-			Health -= WS.Attack;
-			Destroy (other.gameObject);
-		}
-	}
-
 	void MovingAim(){
 		if (isLocalPlayer) {
 			Vector3 temp = Input.mousePosition;
@@ -212,7 +202,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 			aimPt.transform.position = aimPos;
 		}
 	}
-
 
 	[Command]
 	void CmdMovingAim(){
@@ -230,13 +219,21 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 	}
 
+	void OnTriggerEnter2D(Collider2D other){
+		WeaponScripts WS = other.GetComponent<WeaponScripts> ();
+		if (playerID != WS.markedID) {
+			Health -= WS.Attack;
+			Destroy (other.gameObject);
+		}
+	}
+		
+
 	void OnHealthChange(int health){
 		HealthBar.value = (float)health / maxHealth;
 	}
 
 	[Command]
 	void CmdThrow(float powerValue){
-
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 		NetworkServer.Spawn (obj);
