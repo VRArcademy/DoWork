@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4203137521998072}
   - component: {fileID: 114322575339375022}
+  - component: {fileID: 114480322008390746}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -60,3 +61,35 @@ MonoBehaviour:
   playersIDList: 
   curTurnPlayerID: 4294967295
   curTurnPlayerIndex: 2147483647
+--- !u!114 &114480322008390746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023000912127348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 11
+    i1: 147
+    i2: 24
+    i3: 66
+    i4: 249
+    i5: 135
+    i6: 125
+    i7: 244
+    i8: 234
+    i9: 147
+    i10: 207
+    i11: 174
+    i12: 91
+    i13: 158
+    i14: 188
+    i15: 236
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

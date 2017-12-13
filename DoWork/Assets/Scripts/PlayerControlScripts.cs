@@ -8,6 +8,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	public Slider PowerBar;
 
+	public SpriteRenderer playerSprite;
+
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
@@ -16,8 +18,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Transform throwPoint;
 
 	public Transform aimPt;
-	[SyncVar]Vector3 aimPos;
-
+	Vector3 aimPos;
 	Vector3 playerPos;
 
 	//Collision Handle
@@ -55,6 +56,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	}
 
 	void Awake(){
+		playerSprite = GetComponent<SpriteRenderer> ();
 		curPlayerStamina = playerStamina;
 		facingRight = true;
 		GroundCheck = transform.Find ("CheckGround");
@@ -75,6 +77,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 
 		playerPos = this.transform.position;
+
 		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID) ) {
 			CmdAddPlayer ();
 		}
@@ -88,10 +91,9 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void PlayerManagement(){
 		aimPt.gameObject.SetActive (true);
 		MovementSync ();
-		ShootingControl ();
 		SlopeHandle ();
+		ShootingControl ();
 		MovingAim ();
-		CmdMovingAim ();
 	}
 
 	void MovementSync(){
@@ -105,8 +107,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void PlayerMovement(){
 		float horizonSpeed = Input.GetAxis ("Horizontal") * speed;
 		this.transform.Translate(horizonSpeed, 0, 0);
-		CmdFlip (horizonSpeed);
-		RpcFlip (horizonSpeed);
+		Flip (horizonSpeed);
 		CmdStaminaLimit ();
 	}
 
@@ -145,23 +146,24 @@ public class PlayerControlScripts : NetworkBehaviour {
 		}
 	}
 		
+	void Flip(float horizontal){
+		CmdFlip (horizontal);
+	}
+		
 	[Command]
 	private void CmdFlip(float horizontal){
-		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
-			facingRight = !facingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
-		}
+		RpcFlip(horizontal);
 	}
 
 	[ClientRpc]
 	void RpcFlip(float horizontal){
-		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) {
-			facingRight = !facingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
+		if(horizontal > 0){
+			facingRight = true;
+			playerSprite.flipX = false;
+		}else if(horizontal < 0){
+			facingRight = false;
+			playerSprite.flipX = true;
+
 		}
 	}
 
@@ -200,25 +202,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void MovingAim(){
 		if (isLocalPlayer) {
 			Vector3 temp = Input.mousePosition;
-			Vector3 centerPos = playerPos;
-			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
-			float dis = Vector2.Distance (aimPos, playerPos);
-
-			if (dis > Radius) {
-				Vector3 fromOriginToObject = aimPos - playerPos;
-				fromOriginToObject *= Radius / dis;
-				aimPos = playerPos + fromOriginToObject;
-			}
-			aimPt.transform.position = aimPos;
-		}
-	}
-
-
-	[Command]
-	void CmdMovingAim(){
-		if (isLocalPlayer) {
-			Vector3 temp = Input.mousePosition;
-			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
+			aimPos = Camera.main.ScreenToWorldPoint (temp);
 			float dis = Vector2.Distance (aimPos, playerPos);
 
 			if (dis > Radius) {
@@ -236,13 +220,12 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	[Command]
 	void CmdThrow(float powerValue){
-
 		GameObject obj = Instantiate (Weapon, throwPoint.position, Weapon.transform.rotation);
 		Rigidbody2D rdbd = obj.GetComponent<Rigidbody2D> ();
 		NetworkServer.Spawn (obj);
 		WeaponScripts ws = obj.GetComponent<WeaponScripts> ();
 		ws.markedID = playerID;
-		Vector3 direction = aimPt.position - throwPoint.position;
+		Vector3 direction = this.aimPos - this.throwPoint.position;
 		direction.Normalize ();
 		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);
 		NextTurn ();

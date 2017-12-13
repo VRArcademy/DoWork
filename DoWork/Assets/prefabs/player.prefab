@@ -143,6 +143,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1436415418065150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4107397670928364}
+  - component: {fileID: 68299422082969290}
+  m_Layer: 8
+  m_Name: CheckGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1455238545091806
 GameObject:
   m_ObjectHideFlags: 1
@@ -171,22 +187,6 @@ GameObject:
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1489545893745176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4770128684999406}
-  - component: {fileID: 68029178948435844}
-  m_Layer: 8
-  m_Name: CheckGround
-  m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -253,19 +253,11 @@ GameObject:
   - component: {fileID: 4111919169126130}
   - component: {fileID: 212841782021016734}
   - component: {fileID: 114820235626794628}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   - component: {fileID: 114827077157273352}
   - component: {fileID: 114399819789111530}
->>>>>>> parent of 6d67e41... Flip Ok
-=======
-  - component: {fileID: 114827077157273352}
-  - component: {fileID: 114399819789111530}
->>>>>>> parent of 6d67e41... Flip Ok
   - component: {fileID: 50747861267314986}
   - component: {fileID: 61037578230477060}
-  - component: {fileID: 58864939332206818}
+  - component: {fileID: 58438871401348376}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -289,6 +281,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4107397670928364
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436415418065150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.396, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4111919169126130}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4111919169126130
 Transform:
   m_ObjectHideFlags: 1
@@ -304,7 +309,7 @@ Transform:
   - {fileID: 4159611582163356}
   - {fileID: 4905426808525032}
   - {fileID: 224636256338154018}
-  - {fileID: 4770128684999406}
+  - {fileID: 4107397670928364}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -320,19 +325,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4111919169126130}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4770128684999406
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1489545893745176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.337, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4111919169126130}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4905426808525032
 Transform:
@@ -367,7 +359,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58864939332206818
+--- !u!58 &58438871401348376
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -381,7 +373,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.38
 --- !u!61 &61037578230477060
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -394,7 +386,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0, y: 0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -405,14 +397,14 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.804, y: 0.52}
+  m_Size: {x: 0.804, y: 0.57}
   m_EdgeRadius: 0
---- !u!68 &68029178948435844
+--- !u!68 &68299422082969290
 EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1489545893745176}
+  m_GameObject: {fileID: 1436415418065150}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -443,7 +435,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -470,7 +462,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -497,15 +489,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
-=======
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
->>>>>>> parent of 6d67e41... Flip Ok
-=======
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
->>>>>>> parent of 6d67e41... Flip Ok
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -513,11 +497,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &114399819789111530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -539,10 +518,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
-<<<<<<< HEAD
->>>>>>> parent of 6d67e41... Flip Ok
-=======
->>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &114486735963631670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -722,7 +697,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -795,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerBar: {fileID: 114796701281272924}
+  playerSprite: {fileID: 0}
   Weapon: {fileID: 0}
   throwPoint: {fileID: 4159611582163356}
   aimPt: {fileID: 4905426808525032}
@@ -815,11 +791,6 @@ MonoBehaviour:
   pname: 
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   PnameTxt: {fileID: 114731979278170284}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &114827077157273352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -852,10 +823,6 @@ MonoBehaviour:
     i15: 222
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
-<<<<<<< HEAD
->>>>>>> parent of 6d67e41... Flip Ok
-=======
->>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &114877324399333516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -875,15 +842,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 3}
-=======
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
->>>>>>> parent of 6d67e41... Flip Ok
-=======
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
->>>>>>> parent of 6d67e41... Flip Ok
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
