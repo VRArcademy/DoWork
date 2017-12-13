@@ -21,8 +21,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 
 	public const int maxHealth = 100;
 	[SyncVar]public int Health;
-	public enum AttackState{Wait, Aiming, Attack}
-	public AttackState attackstate;
 
 	public override void OnStartLocalPlayer(){
 		
@@ -45,31 +43,27 @@ public class PlayerControlScripts : NetworkBehaviour {
 			CmdAddPlayer ();
 		}
 		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
-			if (attackstate == AttackState.Wait) {
-				attackstate = AttackState.Aiming;
-			}
-			if (attackstate == AttackState.Aiming) {
-				aimPt.gameObject.SetActive (true);
-				CmdMovingAim ();
-				if (Input.GetMouseButton (0)) {
-					attackstate = AttackState.Attack;
+			
+			aimPt.gameObject.SetActive (true);
+			CmdMovingAim ();
+				
+			if (Input.GetMouseButton (0)) {
+				PowerBar.gameObject.SetActive (true);
+				power += PowerChange;
+				if (power < 0 || power > 200) {
+					PowerChange = -PowerChange;
 				}
-			}
-			if (attackstate == AttackState.Attack) {
-				if (Input.GetMouseButton (0)) {
-					PowerBar.gameObject.SetActive (true);
-					power += PowerChange;
-					if (power < 0 || power > 200) {
-						PowerChange = -PowerChange;
-					}
-					PowerBar.value = power / Maxpower;
-					CmdRandWeaponNum ();
-				} else if (Input.GetMouseButtonUp (0)) {
-					CmdThrow (power);
-					power = 0;
-					Invoke ("PowerBarDisActive", 1f);
-				} 
-			}
+				PowerBar.value = power / Maxpower;
+				CmdRandWeaponNum ();
+
+			} else if (Input.GetMouseButtonUp (0)) {
+				CmdThrow (power);
+				power = 0;
+				Invoke ("PowerBarDisActive", 1f);
+				aimPt.gameObject.SetActive (false);
+
+			} 
+			
 		}
 
 		playerPos = this.transform.position;
@@ -96,7 +90,6 @@ public class PlayerControlScripts : NetworkBehaviour {
 	}
 
 	public void NextTurn(){
-		attackstate = AttackState.Wait;
 		GameManager.instance.curTurnPlayerIndex = (GameManager.instance.curTurnPlayerIndex + 1) % 2;
 		GameManager.instance.curTurnPlayerID = GameManager.instance.playersIDList [GameManager.instance.curTurnPlayerIndex];
 	}
