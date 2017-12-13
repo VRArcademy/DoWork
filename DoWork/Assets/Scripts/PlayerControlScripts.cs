@@ -16,6 +16,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public Transform aimPt;
 	Vector3 playerPos;
 
+	float Radius = 2.0f;
+
 	public uint playerID;
 
 	public int randomNum;
@@ -39,7 +41,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		Health = maxHealth;
 	}
 		
-	void Update () {
+	void FixedUpdate () {
 
 		playerPos = this.transform.position;
 
@@ -49,8 +51,9 @@ public class PlayerControlScripts : NetworkBehaviour {
 		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
 			
 			aimPt.gameObject.SetActive (true);
+			MovingAim ();
 			CmdMovingAim ();
-				
+
 			if (Input.GetMouseButton (0)) {
 				PowerBar.gameObject.SetActive (true);
 				power += PowerChange;
@@ -64,8 +67,9 @@ public class PlayerControlScripts : NetworkBehaviour {
 				CmdThrow (power);
 				power = 0;
 				Invoke ("PowerBarDisActive", 1f);
-				aimPt.gameObject.SetActive (false);
+				Invoke ("TargetDisActive", 1f);
 			} 
+				
 		}
 	}
 	[Command]
@@ -83,6 +87,10 @@ public class PlayerControlScripts : NetworkBehaviour {
 		rdbd.velocity = new Vector2 (0.1f*direction.x*powerValue, 0.1f*direction.y*powerValue);
 
 		NextTurn ();
+	}
+
+	void TargetDisActive(){
+		aimPt.gameObject.SetActive (false);
 	}
 
 	void PowerBarDisActive(){
@@ -106,8 +114,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		randomNum = Random.Range (0, 3);
 		Weapon = GameManager.instance.weaponList[randomNum];
 	}
-
-
+		
 	void OnTriggerEnter2D(Collider2D other){
 		WeaponScripts WS = other.GetComponent<WeaponScripts> ();
 		if (playerID != WS.markedID) {
@@ -115,25 +122,34 @@ public class PlayerControlScripts : NetworkBehaviour {
 			Destroy (other.gameObject);
 		}
 	}
+		
+	void MovingAim(){
+		if (isLocalPlayer) {
+			Vector3 temp = Input.mousePosition;
+			Vector3 centerPos = playerPos;
+			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
+			float dis = Vector2.Distance (aimPos, playerPos);
+
+			if (dis > Radius) {
+				Vector3 fromOriginToObject = aimPos - playerPos;
+				fromOriginToObject *= Radius / dis;
+				aimPos = playerPos + fromOriginToObject;
+			}
+			aimPt.transform.position = aimPos;
+		}
+	}
 
 	[Command]
 	void CmdMovingAim(){
 		if (isLocalPlayer) {
 			Vector3 temp = Input.mousePosition;
-			/*Vector3 aimPos = aimPt.transform.position;
-		      aimPos = Camera.main.ScreenToWorldPoint (temp);*/  //////Stupid mistake!!!!!!
 			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
-			//aimPt.transform.position = aimPos;
+			float dis = Vector2.Distance (aimPos, playerPos);
 
-			if (aimPos.x > playerPos.x + 2.7f) {
-				aimPos = new Vector2 (playerPos.x + 2.7f, aimPos.y);
-			} else if (aimPos.x < playerPos.x + 0.8f) {
-				aimPos = new Vector2 (playerPos.x + 0.8f, aimPos.y);
-			}
-			if (aimPos.y > playerPos.y + 2.0f) {
-				aimPos = new Vector2 (aimPos.x, playerPos.y + 2.0f);
-			} else if (aimPos.y < playerPos.y - 1.0f) {
-				aimPos = new Vector2 (aimPos.x, playerPos.y -1.0f);
+			if (dis > Radius) {
+				Vector3 fromOriginToObject = aimPos - playerPos;
+				fromOriginToObject *= Radius / dis;
+				aimPos = playerPos + fromOriginToObject;
 			}
 			aimPt.transform.position = aimPos;
 		}
