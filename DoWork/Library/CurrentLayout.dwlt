@@ -25,6 +25,9 @@ MonoBehaviour:
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 545}
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
@@ -135,6 +138,9 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 14045}
   vertical: 0
   controlID: 5138
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &6
 MonoBehaviour:
@@ -170,6 +176,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
   controlID: 5233
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &7
 MonoBehaviour:
@@ -257,6 +266,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 234
@@ -269,6 +279,8 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 983
     y: 0
     width: 429
@@ -277,6 +289,9 @@ MonoBehaviour:
   m_MaxSize: {x: 10004, y: 14045}
   vertical: 1
   controlID: 5139
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
 --- !u!114 &10
 MonoBehaviour:
@@ -295,12 +310,15 @@ MonoBehaviour:
     x: 1458
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 462
     height: 957
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     width: 429
     height: 488
   m_MinSize: {x: 202, y: 224}
@@ -359,6 +377,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 491
     width: 1224
@@ -367,6 +386,8 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 1412
     y: 0
     width: 508
@@ -581,6 +602,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1226
     y: 122
     width: 230
@@ -588,6 +610,10 @@ MonoBehaviour:
 =======
     x: 985
     y: 122
+=======
+    x: 985
+    y: 122
+>>>>>>> parent of 6d67e41... Flip Ok
     width: 425
     height: 467
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -596,7 +622,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000
+=======
+    m_ExpandedIDs: 7450feff9e53feffd0a0feffd2a0feff80a7feff3ca8feff0ca9feff10a9feff7cb5feff38b6feff08b7feff0cb7feff5cc4feff18c5feffe8c5feffecc5feffe0defeff8ee5feff4ae6feff1ae7feff1ee7feff06f4feffc2f4feff92f5feff96f5feffba07ffff6608ffff3609ffff3a09ffffd216ffff7e17ffff4e18ffff5218ffff581cffff2c1dffff8821ffff8025ffff9831ffff94ddffffd4e9fffff4f4ffffaaf5ffff7af6ffff7ef6ffffd8fbfffff4ffffff0000000058390000569c0000709e0000
+>>>>>>> parent of 6d67e41... Flip Ok
 =======
     m_ExpandedIDs: 7450feff9e53feffd0a0feffd2a0feff80a7feff3ca8feff0ca9feff10a9feff7cb5feff38b6feff08b7feff0cb7feff5cc4feff18c5feffe8c5feffecc5feffe0defeff8ee5feff4ae6feff1ae7feff1ee7feff06f4feffc2f4feff92f5feff96f5feffba07ffff6608ffff3609ffff3a09ffffd216ffff7e17ffff4e18ffff5218ffff581cffff2c1dffff8821ffff8025ffff9831ffff94ddffffd4e9fffff4f4ffffaaf5ffff7af6ffff7ef6ffffd8fbfffff4ffffff0000000058390000569c0000709e0000
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -622,6 +652,9 @@ MonoBehaviour:
 =======
   m_ExpandedScenes:
   - GameScene02_Night
+<<<<<<< HEAD
+>>>>>>> parent of 6d67e41... Flip Ok
+=======
 >>>>>>> parent of 6d67e41... Flip Ok
   m_CurrenRootInstanceID: 0
   m_Locked: 0
@@ -682,11 +715,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1226
     y: 611
     width: 230
     height: 447
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 985
     y: 610
     width: 425
@@ -704,7 +740,11 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/_scene
+=======
+    - Assets/Image
+>>>>>>> parent of 6d67e41... Flip Ok
 =======
     - Assets/Image
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -712,9 +752,12 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/_scene
   m_LastFoldersGridSize: -1
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
   - Assets/Image
   m_LastFoldersGridSize: 16
 >>>>>>> parent of 6d67e41... Flip Ok
@@ -723,10 +766,13 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 04250000
     m_LastClickedID: 9476
     m_ExpandedIDs: 000000008a240000f0250000f2250000ffffff7f
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     m_SelectedIDs: 30260000
     m_LastClickedID: 9776
     m_ExpandedIDs: 00000000e0240000ffffff7f
@@ -787,8 +833,11 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: 
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     m_ExpandedInstanceIDs: 2215feff082b0000ca260000102b0000ea250000
 >>>>>>> parent of 6d67e41... Flip Ok
     m_RenameOverlay:
@@ -839,6 +888,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 613
@@ -969,6 +1019,8 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 =======
+=======
+>>>>>>> parent of 6d67e41... Flip Ok
     x: 1414
     y: 122
     width: 506
