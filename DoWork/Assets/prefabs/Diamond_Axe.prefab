@@ -21,20 +21,12 @@ GameObject:
   - component: {fileID: 4180897777627848}
   - component: {fileID: 212731142436341468}
   - component: {fileID: 50837015543366730}
-<<<<<<< HEAD
   - component: {fileID: 60162720074904458}
   - component: {fileID: 114173710169678262}
   - component: {fileID: 114866332388375122}
-=======
-  - component: {fileID: 60037565574778328}
-  - component: {fileID: 114198588218785726}
-  - component: {fileID: 114081892089126920}
-  - component: {fileID: 114451851836584366}
-  - component: {fileID: 58729898315337376}
->>>>>>> Sing
   m_Layer: 0
   m_Name: Diamond_Axe
-  m_TagString: DiamondAxes
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555356196324146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.127628, y: 1.8879672, z: 0}
+  m_LocalPosition: {x: -2.336251, y: 0.58517116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,22 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58729898315337376
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1555356196324146}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
---- !u!60 &60037565574778328
+--- !u!60 &60162720074904458
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -103,7 +80,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,7 +88,6 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-<<<<<<< HEAD
     - - {x: 0.51, y: -0.14}
       - {x: 0.62, y: 0}
       - {x: 0.62, y: 0.25}
@@ -133,42 +109,6 @@ PolygonCollider2D:
       - {x: 0.12, y: -0.25}
       - {x: 0.29, y: -0.14}
 --- !u!114 &114173710169678262
-=======
-    - - {x: 0.20400001, y: -0.056}
-      - {x: 0.24800001, y: 0}
-      - {x: 0.24800001, y: 0.1}
-      - {x: 0.17600001, y: 0.24400002}
-      - {x: 0.132, y: 0.28800002}
-      - {x: 0.032, y: 0.28800002}
-      - {x: 0.020000001, y: 0.26000002}
-      - {x: -0.052, y: 0.22000001}
-      - {x: -0.08800001, y: 0.172}
-      - {x: -0.08800001, y: 0.080000006}
-      - {x: -0.080000006, y: 0.072000004}
-      - {x: -0.056, y: 0.036000002}
-      - {x: -0.08800001, y: -0.028}
-      - {x: -0.20400001, y: -0.14400001}
-      - {x: -0.24800001, y: -0.18400002}
-      - {x: -0.24800001, y: -0.28800002}
-      - {x: -0.148, y: -0.28800002}
-      - {x: -0.072000004, y: -0.21200001}
-      - {x: 0.048, y: -0.1}
-      - {x: 0.116000004, y: -0.056}
---- !u!114 &114081892089126920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1555356196324146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2652c71fdece44c4084299f940e26332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  markedID: 0
-  Attack: 0
---- !u!114 &114198588218785726
->>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -200,11 +140,7 @@ MonoBehaviour:
     i15: 47
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
-<<<<<<< HEAD
 --- !u!114 &114866332388375122
-=======
---- !u!114 &114451851836584366
->>>>>>> Sing
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -216,11 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 2
-<<<<<<< HEAD
   m_SendInterval: 0.06666667
-=======
-  m_SendInterval: 0.1
->>>>>>> Sing
   m_SyncRotationAxis: 3
   m_RotationSyncCompression: 0
   m_SyncSpin: 0

@@ -30,7 +30,6 @@ C:\Users\87 star\Desktop\DoWork\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\87 star\Desktop\DoWork\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\87 star\Desktop\DoWork\obj\Debug\Assembly-CSharp.dll
 C:\Users\87 star\Desktop\DoWork\obj\Debug\Assembly-CSharp.pdb
-<<<<<<< HEAD
 D:\Game_Project\DoWork\DoWork\Temp\bin\Debug\Assembly-CSharp.dll
 D:\Game_Project\DoWork\DoWork\Temp\bin\Debug\Assembly-CSharp.pdb
 D:\Game_Project\DoWork\DoWork\Temp\bin\Debug\Mono.Cecil.dll
@@ -64,37 +63,3 @@ D:\Game_Project\DoWork\DoWork\Temp\bin\Debug\UnityEngine.VR.xml
 D:\Game_Project\DoWork\DoWork\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Game_Project\DoWork\DoWork\obj\Debug\Assembly-CSharp.dll
 D:\Game_Project\DoWork\DoWork\obj\Debug\Assembly-CSharp.pdb
-=======
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Assembly-CSharp.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Assembly-CSharp.pdb
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\nunit.framework.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEditor.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Analytics.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.HoloLens.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Networking.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.TestRunner.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Timeline.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.UI.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Mono.Cecil.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Unity.SerializationLogic.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Unity.DataContract.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\ExCSS.Unity.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Unity.UNetWeaver.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Unity.CecilTools.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Mono.Cecil.Pdb.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\Mono.Cecil.Mdb.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEditor.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.UI.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Networking.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.TestRunner.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\nunit.framework.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Timeline.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.Analytics.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\Temp\bin\Debug\UnityEngine.HoloLens.xml
-B:\_WorkStage\GitHub\DoWork\DoWork\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-B:\_WorkStage\GitHub\DoWork\DoWork\obj\Debug\Assembly-CSharp.dll
-B:\_WorkStage\GitHub\DoWork\DoWork\obj\Debug\Assembly-CSharp.pdb
->>>>>>> Sing

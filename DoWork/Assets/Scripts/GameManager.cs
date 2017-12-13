@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine.Networking;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public class GameManager : NetworkBehaviour {
 	//Singleton
@@ -11,18 +10,13 @@ public class GameManager : NetworkBehaviour {
 
 	//List of Weapon
 	public List<GameObject> weaponList;
-	public int randNum;
+	public GameObject randWeapon;
+	int randNum;
 
 	//List of Player Id
-<<<<<<< HEAD
-	public List<uint> playersIDList;
-	[SyncVar]public uint currentPlayerId = 0;
-	[SyncVar]public int curTurnPlayerIndex = int.MaxValue;
-=======
 	public List<uint> playersIdList;
 	public int curPlayerIndex = 0;
 	[SyncVar]public uint currentPlayerId = 0;
->>>>>>> parent of ce39092... Merge branch 'Hin' of https://github.com/VRArcademy/DoWork into Hin
 
 	//List of Boolean
 	[SyncVar]public bool isAllPlayerReady = false;
@@ -40,17 +34,11 @@ public class GameManager : NetworkBehaviour {
 		}
 
 		//Players Network Id Declare
-<<<<<<< HEAD
-		playersIDList = new List<uint>();
-=======
 		playersIdList = new List<uint>();
->>>>>>> parent of ce39092... Merge branch 'Hin' of https://github.com/VRArcademy/DoWork into Hin
 		currentPlayerId = uint.MaxValue;
 		DontDestroyOnLoad (this.gameObject);
 	}
 
-<<<<<<< HEAD
-=======
 	void Update () {
 		if (!isServer) {
 		}
@@ -65,27 +53,12 @@ public class GameManager : NetworkBehaviour {
 		
 		if (Input.GetMouseButtonDown (0)) {
 			RandomSpawnWeapon ();
-=======
-	public List<uint> playersIDList;
-
-	[SyncVar]public uint curTurnPlayerID = uint.MaxValue;
-	[SyncVar]public int curTurnPlayerIndex = int.MaxValue;
-	[SyncVar]bool isAllPlayerReady = false;
-
->>>>>>> parent of ce39092... Merge branch 'Hin' of https://github.com/VRArcademy/DoWork into Hin
-	void Start () {
-		state = GameState.WaitToStart;
-	}
-
-	void Update () {
-		if (!isAllPlayerReady && playersIDList.Count == 2) {
-			isAllPlayerReady = true;
-
-			curTurnPlayerIndex = 0;
-			currentPlayerId = playersIDList [curTurnPlayerIndex];
-
-			state = GameState.GameStarted;
 		}
 	}
 
+	void RandomSpawnWeapon(){
+		randNum = Random.Range (0, 3);
+		print ("Random Num: " + randNum);
+		randWeapon = weaponList [randNum];
+	}
 }
