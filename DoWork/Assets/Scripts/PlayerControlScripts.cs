@@ -11,9 +11,13 @@ public class PlayerControlScripts : NetworkBehaviour {
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
+
 	public GameObject Weapon;
 	public Transform throwPoint;
+
 	public Transform aimPt;
+	[SyncVar]Vector3 aimPos;
+
 	Vector3 playerPos;
 
 	float Radius = 2.0f;
@@ -26,9 +30,9 @@ public class PlayerControlScripts : NetworkBehaviour {
 	[SyncVar(hook = "OnHealthChange")]public int Health;
 	public Slider HealthBar;
 
-	public override void OnStartLocalPlayer(){
-		
-	}
+	[SyncVar]public string pname = "PlayerName";
+	[SyncVar]public Color playerColor = Color.white;
+	public Text PnameTxt;
 
 	void Start () {
 		
@@ -39,20 +43,22 @@ public class PlayerControlScripts : NetworkBehaviour {
 		playerID = GetComponent<NetworkIdentity> ().netId.Value;
 
 		Health = maxHealth;
+
+		PnameTxt.text = pname;
+		PnameTxt.color = playerColor;
 	}
-		
 	void FixedUpdate () {
 
 		playerPos = this.transform.position;
 
-		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
+		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID) ) {
 			CmdAddPlayer ();
 		}
-		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID) {
+		if (isLocalPlayer && playerID == GameManager.instance.curTurnPlayerID && GameManager.instance.state != GameManager.GameState.GameEnd) {
 			
 			aimPt.gameObject.SetActive (true);
-			MovingAim ();
-			CmdMovingAim ();
+			MovingAim (); //Server moving aim
+			CmdMovingAim ();//client moving aim
 
 			if (Input.GetMouseButton (0)) {
 				PowerBar.gameObject.SetActive (true);
@@ -71,6 +77,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 			} 
 				
 		}
+
+		Dead ();
 	}
 	[Command]
 	void CmdThrow(float powerValue){
@@ -127,7 +135,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 		if (isLocalPlayer) {
 			Vector3 temp = Input.mousePosition;
 			Vector3 centerPos = playerPos;
-			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
+			aimPos = Camera.main.ScreenToWorldPoint (temp);
 			float dis = Vector2.Distance (aimPos, playerPos);
 
 			if (dis > Radius) {
@@ -143,7 +151,7 @@ public class PlayerControlScripts : NetworkBehaviour {
 	void CmdMovingAim(){
 		if (isLocalPlayer) {
 			Vector3 temp = Input.mousePosition;
-			Vector3 aimPos = Camera.main.ScreenToWorldPoint (temp);
+			aimPos = Camera.main.ScreenToWorldPoint (temp);
 			float dis = Vector2.Distance (aimPos, playerPos);
 
 			if (dis > Radius) {
@@ -154,8 +162,16 @@ public class PlayerControlScripts : NetworkBehaviour {
 			aimPt.transform.position = aimPos;
 		}
 	}
-
 	void OnHealthChange(int health){
 		HealthBar.value = (float)health / maxHealth;
 	}
+
+	void Dead(){
+		if (Health < 0) {
+			GameManager.instance.PlayerNum--;
+			Destroy (gameObject);
+		}
+	}
+
+
 }
