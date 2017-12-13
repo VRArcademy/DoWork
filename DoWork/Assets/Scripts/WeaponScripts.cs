@@ -18,7 +18,7 @@ public class WeaponScripts : NetworkBehaviour {
 		if (this.gameObject.tag == "pickAxes") {
 			Attack = 10;
 		} else if (this.gameObject.tag == "Diamond") {
-			Attack = 100;
+			Attack = 30;
 		} else if (this.gameObject.tag == "DiamondAxes") {
 			Attack = 15;
 		}

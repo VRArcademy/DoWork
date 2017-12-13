@@ -6,7 +6,8 @@ using UnityEngine.Networking;
 
 public class PlayerControlScripts : NetworkBehaviour {
 
-	Slider PowerBar;
+	public Slider PowerBar;
+
 	int Maxpower = 200;
 	float power = 0f;
 	float PowerChange = 6.0f;
@@ -20,14 +21,15 @@ public class PlayerControlScripts : NetworkBehaviour {
 	public int randomNum;
 
 	public const int maxHealth = 100;
-	[SyncVar]public int Health;
+	[SyncVar(hook = "OnHealthChange")]public int Health;
+	public Slider HealthBar;
 
 	public override void OnStartLocalPlayer(){
 		
 	}
 
 	void Start () {
-		PowerBar = gameObject.GetComponentInChildren<Slider> ();
+		
 		PowerBarDisActive ();
 
 		aimPt.gameObject.SetActive (false);
@@ -38,6 +40,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 	}
 		
 	void Update () {
+
+		playerPos = this.transform.position;
 
 		if (isLocalPlayer && !GameManager.instance.playersIDList.Contains (playerID)) {
 			CmdAddPlayer ();
@@ -61,12 +65,8 @@ public class PlayerControlScripts : NetworkBehaviour {
 				power = 0;
 				Invoke ("PowerBarDisActive", 1f);
 				aimPt.gameObject.SetActive (false);
-
 			} 
-			
 		}
-
-		playerPos = this.transform.position;
 	}
 	[Command]
 	void CmdThrow(float powerValue){
@@ -130,7 +130,16 @@ public class PlayerControlScripts : NetworkBehaviour {
 			} else if (aimPos.x < playerPos.x + 0.8f) {
 				aimPos = new Vector2 (playerPos.x + 0.8f, aimPos.y);
 			}
+			if (aimPos.y > playerPos.y + 2.0f) {
+				aimPos = new Vector2 (aimPos.x, playerPos.y + 2.0f);
+			} else if (aimPos.y < playerPos.y - 1.0f) {
+				aimPos = new Vector2 (aimPos.x, playerPos.y -1.0f);
+			}
 			aimPt.transform.position = aimPos;
 		}
+	}
+
+	void OnHealthChange(int health){
+		HealthBar.value = (float)health / maxHealth;
 	}
 }
